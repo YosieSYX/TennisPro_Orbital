@@ -6,16 +6,34 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupViewController: UIViewController {
 
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func createButton(_ sender: Any) {
+        guard let email=emailText.text else{return}
+        guard let password=passwordText.text else{return}
+        
+        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+            if let e=error{
+                print("error")
+            }
+            else{
+                self.performSegue(withIdentifier: "gotoNext", sender: self)
+                
+            }
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 
