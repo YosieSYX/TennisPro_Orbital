@@ -24,7 +24,7 @@ class SignupViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
             if let e=error{
-                print("error")
+                print(e)
             }
             else{
                 self.performSegue(withIdentifier: "gotoNext", sender: self)
