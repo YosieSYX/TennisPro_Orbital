@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */; };
+		4867047E2C00357300332DE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047D2C00357300332DE2 /* ContentView.swift */; };
+		486704802C00357300332DE2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047F2C00357300332DE2 /* Item.swift */; };
+		486704822C00357400332DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486704812C00357400332DE2 /* Assets.xcassets */; };
+		486704852C00357400332DE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486704842C00357400332DE2 /* Preview Assets.xcassets */; };
+		4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867048E2C00357400332DE2 /* TennisPro_OrbitalTests.swift */; };
+		486704992C00357400332DE2 /* TennisPro_OrbitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */; };
+		4867049B2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4867048B2C00357400332DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 486704702C00357300332DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 486704772C00357300332DE2;
+			remoteInfo = TennisPro_Orbital;
+		};
+		486704952C00357400332DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 486704702C00357300332DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 486704772C00357300332DE2;
+			remoteInfo = TennisPro_Orbital;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		486704782C00357300332DE2 /* TennisPro_Orbital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TennisPro_Orbital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalApp.swift; sourceTree = "<group>"; };
+		4867047D2C00357300332DE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4867047F2C00357300332DE2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		486704812C00357400332DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		486704842C00357400332DE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4867048A2C00357400332DE2 /* TennisPro_OrbitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisPro_OrbitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4867048E2C00357400332DE2 /* TennisPro_OrbitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalTests.swift; sourceTree = "<group>"; };
+		486704942C00357400332DE2 /* TennisPro_OrbitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisPro_OrbitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITests.swift; sourceTree = "<group>"; };
+		4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		486704752C00357300332DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704872C00357400332DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704912C00357400332DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4867046F2C00357300332DE2 = {
+			isa = PBXGroup;
+			children = (
+				4867047A2C00357300332DE2 /* TennisPro_Orbital */,
+				4867048D2C00357400332DE2 /* TennisPro_OrbitalTests */,
+				486704972C00357400332DE2 /* TennisPro_OrbitalUITests */,
+				486704792C00357300332DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		486704792C00357300332DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				486704782C00357300332DE2 /* TennisPro_Orbital.app */,
+				4867048A2C00357400332DE2 /* TennisPro_OrbitalTests.xctest */,
+				486704942C00357400332DE2 /* TennisPro_OrbitalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4867047A2C00357300332DE2 /* TennisPro_Orbital */ = {
+			isa = PBXGroup;
+			children = (
+				4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */,
+				4867047D2C00357300332DE2 /* ContentView.swift */,
+				4867047F2C00357300332DE2 /* Item.swift */,
+				486704812C00357400332DE2 /* Assets.xcassets */,
+				486704832C00357400332DE2 /* Preview Content */,
+			);
+			path = TennisPro_Orbital;
+			sourceTree = "<group>";
+		};
+		486704832C00357400332DE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				486704842C00357400332DE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4867048D2C00357400332DE2 /* TennisPro_OrbitalTests */ = {
+			isa = PBXGroup;
+			children = (
+				4867048E2C00357400332DE2 /* TennisPro_OrbitalTests.swift */,
+			);
+			path = TennisPro_OrbitalTests;
+			sourceTree = "<group>";
+		};
+		486704972C00357400332DE2 /* TennisPro_OrbitalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */,
+				4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */,
+			);
+			path = TennisPro_OrbitalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		486704772C00357300332DE2 /* TennisPro_Orbital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4867049E2C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_Orbital" */;
+			buildPhases = (
+				486704742C00357300332DE2 /* Sources */,
+				486704752C00357300332DE2 /* Frameworks */,
+				486704762C00357300332DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TennisPro_Orbital;
+			productName = TennisPro_Orbital;
+			productReference = 486704782C00357300332DE2 /* TennisPro_Orbital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		486704892C00357400332DE2 /* TennisPro_OrbitalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 486704A12C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalTests" */;
+			buildPhases = (
+				486704862C00357400332DE2 /* Sources */,
+				486704872C00357400332DE2 /* Frameworks */,
+				486704882C00357400332DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4867048C2C00357400332DE2 /* PBXTargetDependency */,
+			);
+			name = TennisPro_OrbitalTests;
+			productName = TennisPro_OrbitalTests;
+			productReference = 4867048A2C00357400332DE2 /* TennisPro_OrbitalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		486704932C00357400332DE2 /* TennisPro_OrbitalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 486704A42C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalUITests" */;
+			buildPhases = (
+				486704902C00357400332DE2 /* Sources */,
+				486704912C00357400332DE2 /* Frameworks */,
+				486704922C00357400332DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				486704962C00357400332DE2 /* PBXTargetDependency */,
+			);
+			name = TennisPro_OrbitalUITests;
+			productName = TennisPro_OrbitalUITests;
+			productReference = 486704942C00357400332DE2 /* TennisPro_OrbitalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		486704702C00357300332DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					486704772C00357300332DE2 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					486704892C00357400332DE2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 486704772C00357300332DE2;
+					};
+					486704932C00357400332DE2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 486704772C00357300332DE2;
+					};
+				};
+			};
+			buildConfigurationList = 486704732C00357300332DE2 /* Build configuration list for PBXProject "TennisPro_Orbital" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4867046F2C00357300332DE2;
+			productRefGroup = 486704792C00357300332DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				486704772C00357300332DE2 /* TennisPro_Orbital */,
+				486704892C00357400332DE2 /* TennisPro_OrbitalTests */,
+				486704932C00357400332DE2 /* TennisPro_OrbitalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		486704762C00357300332DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486704852C00357400332DE2 /* Preview Assets.xcassets in Resources */,
+				486704822C00357400332DE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704882C00357400332DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704922C00357400332DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		486704742C00357300332DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
+				486704802C00357300332DE2 /* Item.swift in Sources */,
+				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704862C00357400332DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		486704902C00357400332DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486704992C00357400332DE2 /* TennisPro_OrbitalUITests.swift in Sources */,
+				4867049B2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4867048C2C00357400332DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 486704772C00357300332DE2 /* TennisPro_Orbital */;
+			targetProxy = 4867048B2C00357400332DE2 /* PBXContainerItemProxy */;
+		};
+		486704962C00357400332DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 486704772C00357300332DE2 /* TennisPro_Orbital */;
+			targetProxy = 486704952C00357400332DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4867049C2C00357400332DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4867049D2C00357400332DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4867049F2C00357400332DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TennisPro_Orbital/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-Orbital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		486704A02C00357400332DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TennisPro_Orbital/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-Orbital";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		486704A22C00357400332DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-OrbitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisPro_Orbital";
+			};
+			name = Debug;
+		};
+		486704A32C00357400332DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-OrbitalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisPro_Orbital";
+			};
+			name = Release;
+		};
+		486704A52C00357400332DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-OrbitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TennisPro_Orbital;
+			};
+			name = Debug;
+		};
+		486704A62C00357400332DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-OrbitalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TennisPro_Orbital;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		486704732C00357300332DE2 /* Build configuration list for PBXProject "TennisPro_Orbital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4867049C2C00357400332DE2 /* Debug */,
+				4867049D2C00357400332DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4867049E2C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_Orbital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4867049F2C00357400332DE2 /* Debug */,
+				486704A02C00357400332DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		486704A12C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				486704A22C00357400332DE2 /* Debug */,
+				486704A32C00357400332DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		486704A42C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				486704A52C00357400332DE2 /* Debug */,
+				486704A62C00357400332DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 486704702C00357300332DE2 /* Project object */;
+}
