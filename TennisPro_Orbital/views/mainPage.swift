@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct mainPage: View {
+    @Binding var currentShowingView: String
     var body: some View {
         Text("hello")
     }
 }
 
-#Preview {
-    mainPage()
-}
+

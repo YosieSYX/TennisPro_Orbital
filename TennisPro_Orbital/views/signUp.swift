@@ -14,64 +14,75 @@ struct signUp: View {
     @State private var password:String=""
 
     var body: some View {
-        VStack{
-            Text("TennisPro")
-            Spacer()
-            HStack{
-                Image(systemName: "mail")
-                TextField("Email",text: $email)
+       
+            VStack{
+                Text("TennisPro")
                 Spacer()
-                if(email.count != 0){
-                    Image(systemName: email.isValidEmail() ? "checkmark": "xmark")
-                        .fontWeight(.bold)
-                        .foregroundColor(email.isValidEmail() ? .green: .red )
+                HStack{
+                    Image(systemName: "mail")
+                    TextField("Email",text: $email)
+                    Spacer()
+                    if(email.count != 0){
+                        Image(systemName: email.isValidEmail() ? "checkmark": "xmark")
+                            .fontWeight(.bold)
+                            .foregroundColor(email.isValidEmail() ? .green: .red )
+                    }
                 }
-            }
-            .padding()
-            .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(lineWidth: 2)
-                .foregroundColor(.black))
-            HStack{
-                Image(systemName: "lock")
-                SecureField("password",text: $password)
-                Spacer()
-                if(password.count != 0){
-                    Image(systemName:password.isValidPassword(_password: password) ? "checkmark":"xmark")
-                        .fontWeight(.bold)
-                        .foregroundColor(password.isValidPassword(_password: password) ? .green: .red)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black))
+                HStack{
+                    Image(systemName: "lock")
+                    SecureField("password",text: $password)
+                    Spacer()
+                    if(password.count != 0){
+                        Image(systemName:password.isValidPassword(_password: password) ? "checkmark":"xmark")
+                            .fontWeight(.bold)
+                            .foregroundColor(password.isValidPassword(_password: password) ? .green: .red)
+                    }
                 }
-            }
-            .padding()
-            .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(lineWidth: 2)
-                .foregroundColor(.black))
-            
-            
-            Button(action: {
-                withAnimation{self.currentShowingView = "login"}
-            }){
-                Text("Already have an account? ")
-            }
-            Spacer()
-            Spacer()
-            Text(password.isValidPassword(_password: password) ? "minimum 6 char long, 1 uppercase letter, 1 special char " : "")
-            Button{Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                if let error=error{
-                    print (error)
-                    return
-                }
-                if let authResult=authResult{
-                    print(authResult.user.uid)
-                    loginPage(currentShowingView: self.$currentShowingView)
-                }
-            }} label: {
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black))
                 
-                Text("Create New Account")
+                
+                Button(action: {
+                    withAnimation{self.currentShowingView = "login"}
+                }){
+                    Text("Already have an account? ")
+                }
+                Spacer()
+                Spacer()
+                Text(password.isValidPassword(_password: password) ? "minimum 6 char long, 1 uppercase letter, 1 special char " : "")
+                Button{
+                    print("enter create user")
+                    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                    if let error=error{
+                        print (error)
+                        return
+                    }
+                    if let authResult = authResult{
+                        withAnimation{self.currentShowingView = "login"}
+                        
+                    }
+                    
+                    
+                }} label: {
+                    
+                    Text("Create New Account")
+                }
+                
             }
-            
-        }
+        
+        
+        
+        
+        
+        
     }
 }
 

@@ -56,11 +56,9 @@ struct loginPage: View {
                     if let error = error{
                         print(error)
                         return
+                    }else{
+                        withAnimation{self.currentShowingView = "main"}
                     }
-                    if let authResultt=authResult{
-                        print(authResult?.user.uid)
-                    }
-                    mainPage()
                 }
             } label: {
                 Text("Sign In")

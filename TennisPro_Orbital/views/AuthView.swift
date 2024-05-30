@@ -13,7 +13,13 @@ struct AuthView: View {
         if(currentShowingView ==  "login"){
             loginPage(currentShowingView: $currentShowingView)
         }else{
-            signUp(currentShowingView: $currentShowingView)
+            if(currentShowingView=="sign up"){
+                signUp(currentShowingView: $currentShowingView)
+            }else if(currentShowingView=="main"){
+                mainPage(currentShowingView: $currentShowingView)
+            }
+                
+            
         }
     }
 }
