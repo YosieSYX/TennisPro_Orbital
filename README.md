@@ -1,18 +1,18 @@
-## Orbital 2024 TennisPro
-# Overview:
+# Orbital 2024 TennisPro
+## Overview:
 Our app is a digital coaching app that uses mathematical analysis to provide tennis players accurate and timely feedback on their movement.
 Our application needs the ML Kit provided by Google which detects a player’s pose and digitalises the player, that is, it provides us with the coordinate of the player’s arm position, shoulder position, etc., in time. And we aim to develop an algorithm that analyses and compares the data obtained from these players with professional players. And hence give them detailed feedback on their movement. The final application will be able to take in the video of the player and automatically give feedback.
 
-# Target Level of Achievement: 
+## Target Level of Achievement: 
 Apollo 11
 
-# Motivation:
+## Motivation:
 Tennis is getting more and more popular these days. Most of the time, people just play with friends for fun rather than hiring a coach for training since it is often inconvenient and expensive. However, playing tennis without professional guidance can easily lead to injuries due to improper usage of strength, over-usage of wrist, etc. Hence, we hope to develop an application that can give players technical advice on adjusting and improving their movements. 
 
-# Aim:
+## Aim:
 We aim to develop an app in which tennis players can receive professional feedback on how to improve their movements simply by uploading a video of them hitting. It enables players to conveniently receive professional advice whenever they are playing. What’s more, our application also aims to help player determine which style suits them best by comparing their movement with famous tennis athletes. 
 
-# Technical Proof of Concept:
+## Technical Proof of Concept:
 Go to our project’s Github page: 
 https://github.com/YosieSYX/TennisPro_Orbital
 In the Code dropdown menu, click on: Open with Xcode. 
@@ -21,7 +21,7 @@ Click on Product -> Destination -> Show All Destinations. Then chose (Rosetta) s
 Now you can simulate our app! 
 
 
-# Timeline & Development plan(project log):
+## Timeline & Development plan(project log):
 5.13-5.19
 Pick up necessary skills: learn Xcode, Swift Language(storyboard,swift and swiftUI),  Github, Firebase, basic software engineering knowledge,basic database knowledge.
 (Both, 3 hours each day)
@@ -66,7 +66,7 @@ Milestone3: Finish Additional Feature: rating system. Perform testing and optimi
 
 
 
-# Features:
+## Features:
 Welcome Page, Signup and Login: 
 Welcome Page: 
 Sign up and Login page: 
@@ -94,13 +94,13 @@ Uploaded video and its grading report can be saved and be revisited at a later t
 Rating system
 Based on our analysis of the user’s movement and statistics, we will give users a rating of how well they performed based on NTRP rating system for user’s reference. 
 
-# Tech Stack:
+## Tech Stack:
 Language: Swift
 Xcode: main platform for developing the app.
 Github: For collaboration using the push and pull requests as well as version control. 
 Firebase: For storing user data: their login information and the video they uploaded. 
 
-# Use case:
+## Use case:
 Actor: user
 Scenario: view history of progress
 1.login to your account
