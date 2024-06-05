@@ -26,6 +26,7 @@
 		DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82C92C05B3DC0009522F /* AuthView.swift */; };
 		DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82CD2C05BF2F0009522F /* mainPage.swift */; };
 		DE4271E62C070A9100497D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4271E52C070A9100497D1C /* GoogleService-Info.plist */; };
+		DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DE0E82C92C05B3DC0009522F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		DE0E82CD2C05BF2F0009522F /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		DE4271E52C070A9100497D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				DE0E82C52C058DB90009522F /* signUp.swift */,
 				DE0E82CD2C05BF2F0009522F /* mainPage.swift */,
 				DE0E82C92C05B3DC0009522F /* AuthView.swift */,
+				DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
 				DE0E82C12C0498C20009522F /* loginPage.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
+				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
 				DE0E82C42C0587640009522F /* Function.swift in Sources */,
