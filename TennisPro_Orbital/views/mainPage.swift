@@ -21,18 +21,18 @@ struct mainPage: View {
                   
                     .toolbar{
                         Button(action: {
-                          currentShowingView="upload"
-                        }, label: {
-                            Image(systemName: "plus")
-                        })
-                    }
-                    .toolbar{
-                        Button(action: {
                            currentShowingView="welcome"
                         }, label: {
                             Text("Log out")
                         })
                     }
+            
+                  Button(action: {
+                    currentShowingView="upload"
+                  }, label: {
+                      Image(systemName: "plus.circle")
+                          .font(.system(size: 50))
+                  })
             .navigationTitle("History")
         }
      

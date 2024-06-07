@@ -20,7 +20,7 @@ struct uploadView: View {
                         .font(.system(size: 100))
                 }
             })
-            .frame(width: 400,height: 400)
+            .frame(width: 800,height: 600)
             .background(.quaternary)
             
             Spacer()
@@ -29,6 +29,7 @@ struct uploadView: View {
                 currentShowingView="main"
             }, label: {
                 Text("View history of progress")
+                    .font(.system(size: 30))
             })
             
         }
