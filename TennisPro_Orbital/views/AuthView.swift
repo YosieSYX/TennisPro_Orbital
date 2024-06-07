@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct AuthView: View {
-    @State private var currentShowingView : String = "login"
+    @State private var currentShowingView : String = "welcome"
+    @State private var userName: String=""
     var body: some View {
-        if(currentShowingView ==  "login"){
-            loginPage(currentShowingView: $currentShowingView)
+        if(currentShowingView=="welcome"){
+            WelcomeView(currentShowingView:$currentShowingView)
         }else{
-            if(currentShowingView=="sign up"){
-                signUp(currentShowingView: $currentShowingView)
-            }else if(currentShowingView=="main"){
-                mainPage(currentShowingView: $currentShowingView)
-            }
+            if(currentShowingView ==  "login"){
+                loginPage(currentShowingView: $currentShowingView)
+            }else{
+                if(currentShowingView=="sign up"){
+                    signUp(currentShowingView: $currentShowingView)
+                }else if(currentShowingView=="main"){
+                    mainPage(currentShowingView: $currentShowingView)
+                   
+                }else if (currentShowingView=="upload"){
+                    uploadView(currentShowingView: $currentShowingView)
+                }
                 
-            
+                
+            }
         }
     }
 }

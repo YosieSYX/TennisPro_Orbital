@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @State private var showAuthView = false
+    @Binding var currentShowingView: String
     @State var degreesRotating = 0.0
     
     var body: some View {
@@ -31,7 +31,7 @@ struct WelcomeView: View {
                             }
                         
                         Button(action: {
-                            showAuthView = true
+                            withAnimation{self.currentShowingView = "login"}
                         }, label: {
                             Text("Continue")
                                 .foregroundColor(.blue)
@@ -42,9 +42,7 @@ struct WelcomeView: View {
                         })
                     }.frame(maxHeight: .infinity, alignment: .bottom)
                 }
-                .navigationDestination(isPresented: $showAuthView) {
-                    AuthView()
-                }
+               
             }
     }
 }

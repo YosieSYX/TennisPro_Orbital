@@ -8,10 +8,34 @@
 import SwiftUI
 
 struct mainPage: View {
-    @Binding var currentShowingView: String
+ @Binding var currentShowingView: String
     var body: some View {
-        Text("hello")
+        NavigationStack{
+            Text("Hi, welcome to TennisPro")
+            ScrollView{
+                List{
+                    
+                    
+                }
+            }
+                  
+                    .toolbar{
+                        Button(action: {
+                          currentShowingView="upload"
+                        }, label: {
+                            Image(systemName: "plus")
+                        })
+                    }
+                    .toolbar{
+                        Button(action: {
+                           currentShowingView="welcome"
+                        }, label: {
+                            Text("Log out")
+                        })
+                    }
+            .navigationTitle("History")
+        }
+     
+        
     }
 }
-
-

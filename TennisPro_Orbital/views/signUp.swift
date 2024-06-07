@@ -12,10 +12,11 @@ struct signUp: View {
     @Binding var currentShowingView: String
     @State private var email:String=""
     @State private var password:String=""
+    @State private var name: String=""
 
     var body: some View {
        
-            VStack{
+        VStack(spacing:30){
                 Text("TennisPro")
                 Spacer()
                 HStack{
@@ -33,6 +34,8 @@ struct signUp: View {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(lineWidth: 2)
                         .foregroundColor(.black))
+                
+                
                 HStack{
                     Image(systemName: "lock")
                     SecureField("password",text: $password)
@@ -49,12 +52,29 @@ struct signUp: View {
                         .stroke(lineWidth: 2)
                         .foregroundColor(.black))
                 
+                HStack{
+                    Image(systemName: "lock")
+                    TextField("name",text: $name)
+                    Spacer()
+                    if(name.count != 0){
+                        Image(systemName:"checkmark")
+                            .fontWeight(.bold)
+                            .foregroundColor(.green)
+                    }
+                }
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black))
+                
                 
                 Button(action: {
                     withAnimation{self.currentShowingView = "login"}
                 }){
                     Text("Already have an account? ")
                 }
+                
                 Spacer()
                 Spacer()
                 Text(password.isValidPassword(_password: password) ? "minimum 6 char long, 1 uppercase letter, 1 special char " : "")
@@ -64,17 +84,20 @@ struct signUp: View {
                     if let error=error{
                         print (error)
                         return
-                    }
-                    if let authResult = authResult{
+                    }else{
+                        
                         withAnimation{self.currentShowingView = "login"}
                         
                     }
                     
-                    
                 }} label: {
                     
                     Text("Create New Account")
+                        .foregroundStyle(.white)
                 }
+                .frame(width: 800,height: 50)
+                .background(Color.black)
+                .cornerRadius(5)
                 
             }
         

@@ -62,7 +62,12 @@ struct loginPage: View {
                 }
             } label: {
                 Text("Sign In")
+                    .foregroundStyle(.white)
+                   
             }
+            .frame(width: 800,height: 50)
+            .background(Color.black)
+            .cornerRadius(5)
             
         }
         
