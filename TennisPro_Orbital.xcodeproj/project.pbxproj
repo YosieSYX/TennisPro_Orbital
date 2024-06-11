@@ -28,6 +28,9 @@
 		DE4271E62C070A9100497D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4271E52C070A9100497D1C /* GoogleService-Info.plist */; };
 		DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */; };
 		DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78212C118AEF009CD325 /* uploadView.swift */; };
+		DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */; };
+		DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */; };
+		DEAD78282C188374009CD325 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,11 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD78282C188374009CD325 /* FirebaseVertexAI-Preview in Frameworks */,
 				DE0E82B42C0470760009522F /* FirebaseDatabase in Frameworks */,
 				DE0E82B62C0470760009522F /* FirebaseFirestore in Frameworks */,
 				DE0E82B02C0470760009522F /* FirebaseAnalytics in Frameworks */,
 				DE0E82B82C0470760009522F /* FirebaseStorage in Frameworks */,
 				DE0E82B22C0470760009522F /* FirebaseAuth in Frameworks */,
+				DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */,
+				DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +208,9 @@
 				DE0E82B32C0470760009522F /* FirebaseDatabase */,
 				DE0E82B52C0470760009522F /* FirebaseFirestore */,
 				DE0E82B72C0470760009522F /* FirebaseStorage */,
+				DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */,
+				DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */,
+				DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */,
 			);
 			productName = TennisPro_Orbital;
 			productReference = 486704782C00357300332DE2 /* TennisPro_Orbital.app */;
@@ -693,6 +702,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseVertexAI-Preview";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

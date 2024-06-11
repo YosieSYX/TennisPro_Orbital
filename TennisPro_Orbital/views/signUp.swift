@@ -8,12 +8,15 @@
 import SwiftUI
 import FirebaseAuth
 
+
+
 struct signUp: View {
     @Binding var currentShowingView: String
     @State private var email:String=""
     @State private var password:String=""
     @State private var name: String=""
-
+    @State private var showAlert: Bool=false
+    @State private var errorMessage: String = ""
     var body: some View {
        
         VStack(spacing:30){
@@ -82,9 +85,12 @@ struct signUp: View {
                     print("enter create user")
                     Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                     if let error=error{
-                        print (error)
+                        print ("there is an error: ", error.localizedDescription)
+                        showAlert=true
+                        errorMessage=error.localizedDescription
                         return
-                    }else{
+                    }
+                        else{
                         
                         withAnimation{self.currentShowingView = "login"}
                         
@@ -95,6 +101,12 @@ struct signUp: View {
                     Text("Create New Account")
                         .foregroundStyle(.white)
                 }
+                .alert(isPresented: $showAlert){
+                    Alert(title: Text("Error"),message: Text(errorMessage),dismissButton: .default(Text("Dismiss")))
+                }
+                    
+                
+                 
                 .frame(width: 800,height: 50)
                 .background(Color.black)
                 .cornerRadius(5)

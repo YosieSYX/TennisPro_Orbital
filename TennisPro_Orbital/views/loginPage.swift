@@ -12,6 +12,8 @@ struct loginPage: View {
     @Binding var currentShowingView: String
     @State private var email:String=""
     @State private var password:String=""
+    @State private var errorMessage: String=""
+    @State private var showAlert:Bool = false
     var body: some View {
         VStack{
             Text("TennisPro")
@@ -54,7 +56,9 @@ struct loginPage: View {
             Button{
                 Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                     if let error = error{
-                        print(error)
+                        print(error.localizedDescription)
+                        showAlert=true
+                        errorMessage=error.localizedDescription
                         return
                     }else{
                         withAnimation{self.currentShowingView = "main"}
@@ -64,6 +68,9 @@ struct loginPage: View {
                 Text("Sign In")
                     .foregroundStyle(.white)
                    
+            }
+            .alert(isPresented: $showAlert){
+                Alert(title: Text("Error"),message: Text(errorMessage),dismissButton: .default(Text("Dismiss")))
             }
             .frame(width: 800,height: 50)
             .background(Color.black)
