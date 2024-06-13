@@ -6,20 +6,22 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct uploadView: View {
     @Binding var currentShowingView: String
+    @StateObject var viewModel = ContentViewModel()
     var body: some View {
         VStack{
             Text("Upload new video!")
                 .font(.system(size: 30))
             Spacer()
-            Button(action: {}, label: {
-                VStack{
+            Button(action: {
+            }){
+                PhotosPicker(selection: $viewModel.selectedItem, matching:.any(of: [.videos, .not(.images)])) {
                     Image(systemName: "plus.circle")
-                        .font(.system(size: 100))
                 }
-            })
+            }
             .frame(width: 800,height: 600)
             .background(.quaternary)
             

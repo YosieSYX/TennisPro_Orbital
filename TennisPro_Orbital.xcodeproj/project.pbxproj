@@ -31,6 +31,8 @@
 		DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */; };
 		DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */; };
 		DEAD78282C188374009CD325 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */; };
+		DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */; };
+		DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		DE4271E52C070A9100497D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DEAD78212C118AEF009CD325 /* uploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadView.swift; sourceTree = "<group>"; };
+		DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +132,15 @@
 		4867047A2C00357300332DE2 /* TennisPro_Orbital */ = {
 			isa = PBXGroup;
 			children = (
-				DE4271E52C070A9100497D1C /* GoogleService-Info.plist */,
+				DEAD782E2C1ABB71009CD325 /* Service */,
+				DEAD78292C1AA262009CD325 /* viewModel */,
 				DE0E82C22C05872E0009522F /* extension */,
 				DE0E82BD2C0495300009522F /* views */,
 				4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */,
 				4867047D2C00357300332DE2 /* ContentView.swift */,
 				4867047F2C00357300332DE2 /* Item.swift */,
 				486704812C00357400332DE2 /* Assets.xcassets */,
+				DE4271E52C070A9100497D1C /* GoogleService-Info.plist */,
 				486704832C00357400332DE2 /* Preview Content */,
 			);
 			path = TennisPro_Orbital;
@@ -184,6 +190,22 @@
 				DE0E82C32C0587640009522F /* Function.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		DEAD78292C1AA262009CD325 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		DEAD782E2C1ABB71009CD325 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */,
 				DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */,
 				DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */,
 				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
@@ -337,6 +360,7 @@
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
 				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
+				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
 				DE0E82C42C0587640009522F /* Function.swift in Sources */,
 				DE0E82C62C058DB90009522F /* signUp.swift in Sources */,
