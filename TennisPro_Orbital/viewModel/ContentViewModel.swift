@@ -9,8 +9,10 @@ import Foundation
 import SwiftUI
 import PhotosUI
 import FirebaseFirestore
+import FirebaseAuth
 
 class ContentViewModel: ObservableObject{
+    
     @Published var selectedItem: PhotosPickerItem?{
         didSet{ 
             Task{try await uploadVideo()}
@@ -23,7 +25,13 @@ class ContentViewModel: ObservableObject{
         
         guard let videourl = try await UploadVideo.uploadVideo(withData: videoData)else{return}
         
-        try await Firestore.firestore().collection("video").document().setData(["videourl": videourl])
+        let userId = Auth.auth().currentUser?.uid
+        
+        let userIdString = userId?.description ?? ""
+        
+         
+        
+        try await Firestore.firestore().collection("users").document(userIdString).collection("videos").document().setData(["videourl": videourl])
         
         print("successfully uploaded")
         

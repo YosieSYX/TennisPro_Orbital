@@ -33,6 +33,13 @@
 		DEAD78282C188374009CD325 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */; };
 		DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */; };
 		DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */; };
+		DEAD78322C1C107C009CD325 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78312C1C107C009CD325 /* menu.swift */; };
+		DEAD78342C1C2A15009CD325 /* forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78332C1C2A15009CD325 /* forum.swift */; };
+		DEAD78362C1C32BF009CD325 /* ForumVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78352C1C32BF009CD325 /* ForumVideo.swift */; };
+		DEAD78382C1C32D7009CD325 /* ViewModelForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */; };
+		DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */; };
+		DEAD783E2C1D64BC009CD325 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */; };
+		DEAD78402C1D64EE009CD325 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD783F2C1D64EE009CD325 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,11 @@
 		DEAD78212C118AEF009CD325 /* uploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadView.swift; sourceTree = "<group>"; };
 		DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideo.swift; sourceTree = "<group>"; };
+		DEAD78312C1C107C009CD325 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
+		DEAD78332C1C2A15009CD325 /* forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forum.swift; sourceTree = "<group>"; };
+		DEAD78352C1C32BF009CD325 /* ForumVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumVideo.swift; sourceTree = "<group>"; };
+		DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelForum.swift; sourceTree = "<group>"; };
+		DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 				DE0E82B22C0470760009522F /* FirebaseAuth in Frameworks */,
 				DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */,
 				DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */,
+				DEAD783E2C1D64BC009CD325 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD78402C1D64EE009CD325 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +146,7 @@
 		4867047A2C00357300332DE2 /* TennisPro_Orbital */ = {
 			isa = PBXGroup;
 			children = (
+				DEAD783A2C1D63B6009CD325 /* Model */,
 				DEAD782E2C1ABB71009CD325 /* Service */,
 				DEAD78292C1AA262009CD325 /* viewModel */,
 				DE0E82C22C05872E0009522F /* extension */,
@@ -177,7 +192,9 @@
 				DE0E82C02C0498C20009522F /* loginPage.swift */,
 				DE0E82C52C058DB90009522F /* signUp.swift */,
 				DE0E82CD2C05BF2F0009522F /* mainPage.swift */,
+				DEAD78332C1C2A15009CD325 /* forum.swift */,
 				DEAD78212C118AEF009CD325 /* uploadView.swift */,
+				DEAD78312C1C107C009CD325 /* menu.swift */,
 				DE0E82C92C05B3DC0009522F /* AuthView.swift */,
 				DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */,
 			);
@@ -196,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */,
+				DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -204,8 +222,17 @@
 			isa = PBXGroup;
 			children = (
 				DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */,
+				DEAD78352C1C32BF009CD325 /* ForumVideo.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DEAD783A2C1D63B6009CD325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +260,7 @@
 				DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */,
 				DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */,
 				DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */,
+				DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */,
 			);
 			productName = TennisPro_Orbital;
 			productReference = 486704782C00357300332DE2 /* TennisPro_Orbital.app */;
@@ -252,6 +280,9 @@
 				4867048C2C00357400332DE2 /* PBXTargetDependency */,
 			);
 			name = TennisPro_OrbitalTests;
+			packageProductDependencies = (
+				DEAD783F2C1D64EE009CD325 /* FirebaseFirestoreSwift */,
+			);
 			productName = TennisPro_OrbitalTests;
 			productReference = 4867048A2C00357400332DE2 /* TennisPro_OrbitalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -352,16 +383,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */,
 				DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */,
 				DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */,
 				DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */,
 				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
+				DEAD78382C1C32D7009CD325 /* ViewModelForum.swift in Sources */,
 				DE0E82C12C0498C20009522F /* loginPage.swift in Sources */,
+				DEAD78342C1C2A15009CD325 /* forum.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
+				DEAD78322C1C107C009CD325 /* menu.swift in Sources */,
 				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
 				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
+				DEAD78362C1C32BF009CD325 /* ForumVideo.swift in Sources */,
 				DE0E82C42C0587640009522F /* Function.swift in Sources */,
 				DE0E82C62C058DB90009522F /* signUp.swift in Sources */,
 			);
@@ -741,6 +777,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DEAD783F2C1D64EE009CD325 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

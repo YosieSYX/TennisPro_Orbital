@@ -8,9 +8,13 @@
 import SwiftUI
 import SwiftData
 import FirebaseCore
+import FirebaseStorage
+import FirebaseFirestore
 
 @main
 struct TennisPro_OrbitalApp: App {
+    
+    
     init(){
         FirebaseApp.configure()
     }

@@ -61,7 +61,7 @@ struct loginPage: View {
                         errorMessage=error.localizedDescription
                         return
                     }else{
-                        withAnimation{self.currentShowingView = "main"}
+                        withAnimation{self.currentShowingView = "menu"}
                     }
                 }
             } label: {

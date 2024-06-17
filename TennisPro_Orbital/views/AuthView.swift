@@ -24,7 +24,12 @@ struct AuthView: View {
                    
                 }else if (currentShowingView=="upload"){
                     uploadView(currentShowingView: $currentShowingView)
+                }else if(currentShowingView=="menu"){
+                    menu(currentShowingView: $currentShowingView)
+                }else if(currentShowingView=="forum"){
+                    forum(currentShowingView: $currentShowingView)
                 }
+                
                 
                 
             }

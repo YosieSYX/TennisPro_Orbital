@@ -26,6 +26,13 @@ struct mainPage: View {
                             Text("Log out")
                         })
                     }
+                    .toolbar{
+                        Button(action: {
+                           currentShowingView="menu"
+                        }, label: {
+                            Text("menu")
+                        })
+                    }
             
                   Button(action: {
                     currentShowingView="upload"

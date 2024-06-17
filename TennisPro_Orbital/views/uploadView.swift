@@ -20,6 +20,7 @@ struct uploadView: View {
             }){
                 PhotosPicker(selection: $viewModel.selectedItem, matching:.any(of: [.videos, .not(.images)])) {
                     Image(systemName: "plus.circle")
+                        .frame(width: 500,height: 500)
                 }
             }
             .frame(width: 800,height: 600)
