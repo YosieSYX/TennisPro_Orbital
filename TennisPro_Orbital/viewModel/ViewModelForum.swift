@@ -37,8 +37,7 @@ class ViewModelForum: ObservableObject{
         print(postVideourl)
         print("successful retrive postVideourl")
         // Update one field, creating the document if it does not exist.
-        let db = Firestore.firestore().collection("cities").document().getDocument()
-        try await db.setData([ "capital": true ], merge: true)
+   
         print("testing set data successful")
         try await Firestore.firestore().collection("forum").document().setData(["Videourl": postVideourl])
         
