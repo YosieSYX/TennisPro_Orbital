@@ -25,7 +25,6 @@
 		DE0E82C62C058DB90009522F /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82C52C058DB90009522F /* signUp.swift */; };
 		DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82C92C05B3DC0009522F /* AuthView.swift */; };
 		DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82CD2C05BF2F0009522F /* mainPage.swift */; };
-		DE4271E62C070A9100497D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4271E52C070A9100497D1C /* GoogleService-Info.plist */; };
 		DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */; };
 		DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78212C118AEF009CD325 /* uploadView.swift */; };
 		DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */; };
@@ -40,6 +39,8 @@
 		DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */; };
 		DEAD783E2C1D64BC009CD325 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */; };
 		DEAD78402C1D64EE009CD325 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD783F2C1D64EE009CD325 /* FirebaseFirestoreSwift */; };
+		DEAD78892C22C269009CD325 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78882C22C269009CD325 /* FirebaseDatabaseSwift */; };
+		DEAD790C2C23C72E009CD325 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEAD790B2C23C72E009CD325 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,6 @@
 		DE0E82C52C058DB90009522F /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		DE0E82C92C05B3DC0009522F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		DE0E82CD2C05BF2F0009522F /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
-		DE4271E52C070A9100497D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DEAD78212C118AEF009CD325 /* uploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadView.swift; sourceTree = "<group>"; };
 		DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 		DEAD78352C1C32BF009CD325 /* ForumVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumVideo.swift; sourceTree = "<group>"; };
 		DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelForum.swift; sourceTree = "<group>"; };
 		DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideo.swift; sourceTree = "<group>"; };
+		DEAD790B2C23C72E009CD325 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD78892C22C269009CD325 /* FirebaseDatabaseSwift in Frameworks */,
 				DEAD78282C188374009CD325 /* FirebaseVertexAI-Preview in Frameworks */,
 				DE0E82B42C0470760009522F /* FirebaseDatabase in Frameworks */,
 				DE0E82B62C0470760009522F /* FirebaseFirestore in Frameworks */,
@@ -155,7 +157,7 @@
 				4867047D2C00357300332DE2 /* ContentView.swift */,
 				4867047F2C00357300332DE2 /* Item.swift */,
 				486704812C00357400332DE2 /* Assets.xcassets */,
-				DE4271E52C070A9100497D1C /* GoogleService-Info.plist */,
+				DEAD790B2C23C72E009CD325 /* GoogleService-Info.plist */,
 				486704832C00357400332DE2 /* Preview Content */,
 			);
 			path = TennisPro_Orbital;
@@ -261,6 +263,7 @@
 				DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */,
 				DEAD78272C188374009CD325 /* FirebaseVertexAI-Preview */,
 				DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */,
+				DEAD78882C22C269009CD325 /* FirebaseDatabaseSwift */,
 			);
 			productName = TennisPro_Orbital;
 			productReference = 486704782C00357300332DE2 /* TennisPro_Orbital.app */;
@@ -358,7 +361,7 @@
 			files = (
 				486704852C00357400332DE2 /* Preview Assets.xcassets in Resources */,
 				486704822C00357400332DE2 /* Assets.xcassets in Resources */,
-				DE4271E62C070A9100497D1C /* GoogleService-Info.plist in Resources */,
+				DEAD790C2C23C72E009CD325 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +790,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		DEAD78882C22C269009CD325 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

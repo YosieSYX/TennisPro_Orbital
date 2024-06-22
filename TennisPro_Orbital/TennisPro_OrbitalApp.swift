@@ -10,6 +10,7 @@ import SwiftData
 import FirebaseCore
 import FirebaseStorage
 import FirebaseFirestore
+import UIKit
 
 @main
 struct TennisPro_OrbitalApp: App {

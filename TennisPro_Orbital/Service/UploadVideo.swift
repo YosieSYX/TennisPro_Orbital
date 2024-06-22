@@ -16,7 +16,7 @@ struct UploadVideo{
         let ref = Storage.storage().reference().child(userIdString).child("video.mp4")
 
         let metadata = StorageMetadata()
-        metadata.contentType="video/quicktime"
+        metadata.contentType = "video/quicktime"
         do{
             let _ = try await ref.putDataAsync(videoData,metadata: metadata)
             let url = try await ref.downloadURL()

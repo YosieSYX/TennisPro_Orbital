@@ -21,7 +21,8 @@ class ViewModelForum: ObservableObject{
     }
     
     init(){
-        Task{try await fetchVideos()}
+        Task{try await fetchVideos()
+        print("try to fetch video")}
         
     }
     func uploadVideo() async throws{
@@ -34,12 +35,12 @@ class ViewModelForum: ObservableObject{
         guard let postVideourl = try await ForumVideo.uploadVideo(withData: postVideoData)else{
             print("unsuccessful retrieve postVideourl")
             return}
-        print(postVideourl)
         print("successful retrive postVideourl")
+        print("retirive url"+postVideourl)
         // Update one field, creating the document if it does not exist.
    
-        print("testing set data successful")
-        try await Firestore.firestore().collection("forum").document().setData(["Videourl": postVideourl])
+       try await Firestore.firestore().collection("forum").document().setData(["videoUrl":postVideourl])
+        
         
         
         print("successfully uploaded")
@@ -51,10 +52,15 @@ class ViewModelForum: ObservableObject{
     @MainActor
     func fetchVideos() async throws{
         let snapshot=try await Firestore.firestore().collection("forum").getDocuments()
-        
+        for doc in snapshot.documents{
+            print(doc.data())
+        }
         self.videos = snapshot.documents.compactMap(
             { try?$0.data(as: FetchVideo.self)
             })
+
+        
     }
     
 }
+

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBkX6D4hc98bzjWcOq5WRGQ0NwhzMqGtkQ</string>
+	<string>AIzaSyDYqf9DL_6Vz2_YZPMRMtYYZqjM0D-bEE4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>401555750744</string>
+	<string>708686620014</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>NUS.TennisPro-Orbital</string>
 	<key>PROJECT_ID</key>
-	<string>tennispro3-e1a88</string>
+	<string>tennispro4-f35a1</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tennispro3-e1a88.appspot.com</string>
+	<string>tennispro4-f35a1.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:401555750744:ios:f137f5ad39dc3306b52f2d</string>
+	<string>1:708686620014:ios:0314aa4d8a881a63788d7f</string>
 </dict>
 </plist>

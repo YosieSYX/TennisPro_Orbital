@@ -12,7 +12,8 @@ import FirebaseAuth
 
 struct ForumVideo{
     static func uploadVideo(withData postVideoData: Data) async throws -> String?{
-        let filename=NSUUID().uuidString
+        let filename=NSUUID().uuidString+".mp4"
+        
         let ref = Storage.storage().reference().child("forum").child("video").child(filename)
 
         let metadata = StorageMetadata()
