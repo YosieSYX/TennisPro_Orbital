@@ -19,10 +19,15 @@ class ViewModelForum: ObservableObject{
             Task{try await uploadVideo()}
         }
     }
-    
     init(){
-        Task{try await fetchVideos()
-        print("try to fetch video")}
+        Task{
+            do{
+                try await fetchVideos()
+                print("successfully fetched")
+            }catch{
+                print("Failed to fetch video:\(error.localizedDescription)")
+            }
+        }
         
     }
     func uploadVideo() async throws{
@@ -51,7 +56,9 @@ class ViewModelForum: ObservableObject{
     
     @MainActor
     func fetchVideos() async throws{
+        print("I reach here 1")
         let snapshot=try await Firestore.firestore().collection("forum").getDocuments()
+        print("I reach here 2")
         for doc in snapshot.documents{
             print(doc.data())
         }

@@ -20,7 +20,13 @@ struct forum: View {
             ScrollView{
                 ForEach(viewModel.videos){videos in
                     VideoPlayer(player: AVPlayer(url: URL(string: videos.videoUrl)!))
-                        .frame(height:250)
+                       .frame(height:250)
+                    
+                }
+            }
+            .refreshable {
+                Task{
+                    try await viewModel.fetchVideos()
                 }
             }
             
