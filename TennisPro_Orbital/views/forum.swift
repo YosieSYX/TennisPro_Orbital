@@ -12,6 +12,7 @@ import AVKit
 struct forum: View {
     @StateObject var viewModel = ViewModelForum()
     @Binding var currentShowingView: String
+
     
     var body: some View {
         NavigationStack{
@@ -19,14 +20,24 @@ struct forum: View {
               
             ScrollView{
                 ForEach(viewModel.videos){videos in
-                    VideoPlayer(player: AVPlayer(url: URL(string: videos.videoUrl)!))
-                       .frame(height:250)
-                    
+                    VStack{
+                        VideoPlayer(player: AVPlayer(url: URL(string: videos.videoUrl)!))
+                            .frame(height:250)
+                        NavigationLink(destination: comment(videoUrl: videos.videoUrl, id: videos.id ?? "defaultId")) {
+                            Text("see details")
+                                .frame(maxWidth: .infinity)
+                                .frame(height:40)
+                                .background(Color.gray)
+                                .foregroundColor(.blue)
+                                .cornerRadius(10)
+                        }
+                    }
                 }
             }
             .refreshable {
                 Task{
                     try await viewModel.fetchVideos()
+                    
                 }
             }
             
