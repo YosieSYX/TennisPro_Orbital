@@ -47,6 +47,11 @@
 		DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82C92C05B3DC0009522F /* AuthView.swift */; };
 		DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E82CD2C05BF2F0009522F /* mainPage.swift */; };
 		DE217C6E2C301C03009051DD /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = DE217C6D2C301C03009051DD /* FirebaseDynamicLinks */; };
+		DE217C742C303320009051DD /* comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C732C303320009051DD /* comment.swift */; };
+		DE217C762C303335009051DD /* textBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C752C303335009051DD /* textBox.swift */; };
+		DE217C782C303383009051DD /* UploadComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C772C303383009051DD /* UploadComment.swift */; };
+		DE217C7A2C3033C1009051DD /* ForumComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C792C3033C1009051DD /* ForumComment.swift */; };
+		DE217C7C2C303451009051DD /* FetchComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C7B2C303451009051DD /* FetchComment.swift */; };
 		DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */; };
 		DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78212C118AEF009CD325 /* uploadView.swift */; };
 		DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */; };
@@ -113,6 +118,11 @@
 		DE0E82C52C058DB90009522F /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		DE0E82C92C05B3DC0009522F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		DE0E82CD2C05BF2F0009522F /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
+		DE217C732C303320009051DD /* comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comment.swift; sourceTree = "<group>"; };
+		DE217C752C303335009051DD /* textBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBox.swift; sourceTree = "<group>"; };
+		DE217C772C303383009051DD /* UploadComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadComment.swift; sourceTree = "<group>"; };
+		DE217C792C3033C1009051DD /* ForumComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumComment.swift; sourceTree = "<group>"; };
+		DE217C7B2C303451009051DD /* FetchComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchComment.swift; sourceTree = "<group>"; };
 		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DEAD78212C118AEF009CD325 /* uploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadView.swift; sourceTree = "<group>"; };
 		DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -261,8 +271,10 @@
 				DE0E82C52C058DB90009522F /* signUp.swift */,
 				DE0E82CD2C05BF2F0009522F /* mainPage.swift */,
 				DEAD78332C1C2A15009CD325 /* forum.swift */,
+				DE217C732C303320009051DD /* comment.swift */,
 				DEAD78212C118AEF009CD325 /* uploadView.swift */,
 				DEAD78312C1C107C009CD325 /* menu.swift */,
+				DE217C752C303335009051DD /* textBox.swift */,
 				DE0E82C92C05B3DC0009522F /* AuthView.swift */,
 				DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */,
 				48BB26C32C2D03B600FB7260 /* AnalysisView.swift */,
@@ -285,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */,
+				DE217C792C3033C1009051DD /* ForumComment.swift */,
 				DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */,
 				48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */,
 			);
@@ -296,6 +309,7 @@
 			children = (
 				DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */,
 				DEAD78352C1C32BF009CD325 /* ForumVideo.swift */,
+				DE217C772C303383009051DD /* UploadComment.swift */,
 				48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */,
 			);
 			path = Service;
@@ -305,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */,
+				DE217C7B2C303451009051DD /* FetchComment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -639,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE217C782C303383009051DD /* UploadComment.swift in Sources */,
 				DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */,
 				DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */,
 				DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */,
@@ -647,13 +663,16 @@
 				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
 				DEAD78382C1C32D7009CD325 /* ViewModelForum.swift in Sources */,
 				48BB26CC2C2D063300FB7260 /* HittingView.swift in Sources */,
+				DE217C7A2C3033C1009051DD /* ForumComment.swift in Sources */,
 				48BB26D82C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
 				DE0E82C12C0498C20009522F /* loginPage.swift in Sources */,
 				DEAD78342C1C2A15009CD325 /* forum.swift in Sources */,
+				DE217C742C303320009051DD /* comment.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
 				DEAD78322C1C107C009CD325 /* menu.swift in Sources */,
 				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
+				DE217C7C2C303451009051DD /* FetchComment.swift in Sources */,
 				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
 				DEAD78362C1C32BF009CD325 /* ForumVideo.swift in Sources */,
@@ -662,6 +681,7 @@
 				48BB26C82C2D062000FB7260 /* BackswingView.swift in Sources */,
 				48BB26C42C2D03B600FB7260 /* AnalysisView.swift in Sources */,
 				DE0E82C62C058DB90009522F /* signUp.swift in Sources */,
+				DE217C762C303335009051DD /* textBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
