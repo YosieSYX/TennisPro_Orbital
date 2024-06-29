@@ -29,6 +29,20 @@ struct AuthView: View {
                 }else if(currentShowingView=="forum"){
                     forum(currentShowingView: $currentShowingView)
                 }
+                else if(currentShowingView=="analysis"){
+                    AnalysisView(currentShowingView: $currentShowingView)
+                }
+                else if(currentShowingView=="backswing"){
+                    BackswingView(currentShowingView: $currentShowingView)
+                }
+                else if(currentShowingView=="hitting"){
+                    HittingView(currentShowingView: $currentShowingView)
+                }
+                else if(currentShowingView=="backswingAnalysis"){
+                    BackswingResultsView(currentShowingView: $currentShowingView)
+                }
+                
+                
                 
                 
                 

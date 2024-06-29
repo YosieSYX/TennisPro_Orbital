@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CE564109FD66FCABAD37C5 /* Pods_TennisPro_OrbitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4A8F3DB393163FEB8645C /* Pods_TennisPro_OrbitalTests.framework */; };
+		0B888A17B963DB35D6990D45 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C40E6AED5F755D092743C1 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework */; };
+		20A5D566F0C1CD991D0E392E /* Pods_TennisPro_Orbital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18623C800CC71BCA81185F5 /* Pods_TennisPro_Orbital.framework */; };
 		4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */; };
 		4867047E2C00357300332DE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047D2C00357300332DE2 /* ContentView.swift */; };
 		486704802C00357300332DE2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867047F2C00357300332DE2 /* Item.swift */; };
@@ -15,6 +18,24 @@
 		4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867048E2C00357400332DE2 /* TennisPro_OrbitalTests.swift */; };
 		486704992C00357400332DE2 /* TennisPro_OrbitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */; };
 		4867049B2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */; };
+		48BB26C42C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
+		48BB26C52C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
+		48BB26C62C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
+		48BB26C82C2D062000FB7260 /* BackswingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C72C2D062000FB7260 /* BackswingView.swift */; };
+		48BB26C92C2D062000FB7260 /* BackswingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C72C2D062000FB7260 /* BackswingView.swift */; };
+		48BB26CA2C2D062000FB7260 /* BackswingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C72C2D062000FB7260 /* BackswingView.swift */; };
+		48BB26CC2C2D063300FB7260 /* HittingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CB2C2D063300FB7260 /* HittingView.swift */; };
+		48BB26CD2C2D063300FB7260 /* HittingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CB2C2D063300FB7260 /* HittingView.swift */; };
+		48BB26CE2C2D063300FB7260 /* HittingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CB2C2D063300FB7260 /* HittingView.swift */; };
+		48BB26D02C2E38F500FB7260 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */; };
+		48BB26D12C2E38F500FB7260 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */; };
+		48BB26D22C2E38F500FB7260 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */; };
+		48BB26D42C2E3FE300FB7260 /* PhotoUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */; };
+		48BB26D52C2E3FE300FB7260 /* PhotoUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */; };
+		48BB26D62C2E3FE300FB7260 /* PhotoUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */; };
+		48BB26D82C2E48B000FB7260 /* BackswingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */; };
+		48BB26D92C2E48B000FB7260 /* BackswingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */; };
+		48BB26DA2C2E48B000FB7260 /* BackswingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */; };
 		DE0E82B02C0470760009522F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DE0E82AF2C0470760009522F /* FirebaseAnalytics */; };
 		DE0E82B22C0470760009522F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DE0E82B12C0470760009522F /* FirebaseAuth */; };
 		DE0E82B42C0470760009522F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DE0E82B32C0470760009522F /* FirebaseDatabase */; };
@@ -61,6 +82,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C8655DFA32E91989376335A /* Pods-TennisPro_Orbital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_Orbital.release.xcconfig"; path = "Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital.release.xcconfig"; sourceTree = "<group>"; };
+		1B63A590FF009657CCE5AC0C /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.release.xcconfig"; path = "Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33F4A8F3DB393163FEB8645C /* Pods_TennisPro_OrbitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisPro_OrbitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C40E6AED5F755D092743C1 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB6C67DFC83E7098BC1E2D9 /* Pods-TennisPro_Orbital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_Orbital.debug.xcconfig"; path = "Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital.debug.xcconfig"; sourceTree = "<group>"; };
 		486704782C00357300332DE2 /* TennisPro_Orbital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TennisPro_Orbital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4867047B2C00357300332DE2 /* TennisPro_OrbitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalApp.swift; sourceTree = "<group>"; };
 		4867047D2C00357300332DE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +98,14 @@
 		486704942C00357400332DE2 /* TennisPro_OrbitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisPro_OrbitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITests.swift; sourceTree = "<group>"; };
 		4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48BB26C32C2D03B600FB7260 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		48BB26C72C2D062000FB7260 /* BackswingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackswingView.swift; sourceTree = "<group>"; };
+		48BB26CB2C2D063300FB7260 /* HittingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittingView.swift; sourceTree = "<group>"; };
+		48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUpload.swift; sourceTree = "<group>"; };
+		48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackswingResultsView.swift; sourceTree = "<group>"; };
+		7344A84EC341D984A1FEC3D8 /* Pods-TennisPro_OrbitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_OrbitalTests.debug.xcconfig"; path = "Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C260100E6DDBEAAF4CD7D168 /* Pods-TennisPro_OrbitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_OrbitalTests.release.xcconfig"; path = "Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE0E82C02C0498C20009522F /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
 		DE0E82C32C0587640009522F /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		DE0E82C52C058DB90009522F /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
@@ -87,6 +121,8 @@
 		DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelForum.swift; sourceTree = "<group>"; };
 		DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideo.swift; sourceTree = "<group>"; };
 		DEAD790B2C23C72E009CD325 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E18623C800CC71BCA81185F5 /* Pods_TennisPro_Orbital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisPro_Orbital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE726A7822DD7E9D869AE329 /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +140,7 @@
 				DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */,
 				DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */,
 				DEAD783E2C1D64BC009CD325 /* FirebaseFirestoreSwift in Frameworks */,
+				20A5D566F0C1CD991D0E392E /* Pods_TennisPro_Orbital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAD78402C1D64EE009CD325 /* FirebaseFirestoreSwift in Frameworks */,
+				06CE564109FD66FCABAD37C5 /* Pods_TennisPro_OrbitalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,12 +157,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B888A17B963DB35D6990D45 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AEF97D2F78F40B9E432B6FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18623C800CC71BCA81185F5 /* Pods_TennisPro_Orbital.framework */,
+				36C40E6AED5F755D092743C1 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework */,
+				33F4A8F3DB393163FEB8645C /* Pods_TennisPro_OrbitalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4867046F2C00357300332DE2 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +181,8 @@
 				4867048D2C00357400332DE2 /* TennisPro_OrbitalTests */,
 				486704972C00357400332DE2 /* TennisPro_OrbitalUITests */,
 				486704792C00357300332DE2 /* Products */,
+				C7BECEBE30BA52293CA7E74E /* Pods */,
+				3AEF97D2F78F40B9E432B6FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +239,19 @@
 			path = TennisPro_OrbitalUITests;
 			sourceTree = "<group>";
 		};
+		C7BECEBE30BA52293CA7E74E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB6C67DFC83E7098BC1E2D9 /* Pods-TennisPro_Orbital.debug.xcconfig */,
+				0C8655DFA32E91989376335A /* Pods-TennisPro_Orbital.release.xcconfig */,
+				FE726A7822DD7E9D869AE329 /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.debug.xcconfig */,
+				1B63A590FF009657CCE5AC0C /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.release.xcconfig */,
+				7344A84EC341D984A1FEC3D8 /* Pods-TennisPro_OrbitalTests.debug.xcconfig */,
+				C260100E6DDBEAAF4CD7D168 /* Pods-TennisPro_OrbitalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE0E82BD2C0495300009522F /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +263,10 @@
 				DEAD78312C1C107C009CD325 /* menu.swift */,
 				DE0E82C92C05B3DC0009522F /* AuthView.swift */,
 				DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */,
+				48BB26C32C2D03B600FB7260 /* AnalysisView.swift */,
+				48BB26C72C2D062000FB7260 /* BackswingView.swift */,
+				48BB26CB2C2D063300FB7260 /* HittingView.swift */,
+				48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -216,6 +284,7 @@
 			children = (
 				DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */,
 				DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */,
+				48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -225,6 +294,7 @@
 			children = (
 				DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */,
 				DEAD78352C1C32BF009CD325 /* ForumVideo.swift */,
+				48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -244,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4867049E2C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_Orbital" */;
 			buildPhases = (
+				9701FED20D27EA846E1F0238 /* [CP] Check Pods Manifest.lock */,
 				486704742C00357300332DE2 /* Sources */,
 				486704752C00357300332DE2 /* Frameworks */,
 				486704762C00357300332DE2 /* Resources */,
+				E3C0117BDB6B98D2CB04348C /* [CP] Embed Pods Frameworks */,
+				3B12263F16E4A43002875A7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,9 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 486704A12C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalTests" */;
 			buildPhases = (
+				672B79FF6223D0E210CEA6F9 /* [CP] Check Pods Manifest.lock */,
 				486704862C00357400332DE2 /* Sources */,
 				486704872C00357400332DE2 /* Frameworks */,
 				486704882C00357400332DE2 /* Resources */,
+				EDEA05D1C4B1278DE8D74011 /* [CP] Embed Pods Frameworks */,
+				D479FD7F1CF594AA758E4BC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,9 +370,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 486704A42C00357400332DE2 /* Build configuration list for PBXNativeTarget "TennisPro_OrbitalUITests" */;
 			buildPhases = (
+				E53B752F640DBAB68ABBF26F /* [CP] Check Pods Manifest.lock */,
 				486704902C00357400332DE2 /* Sources */,
 				486704912C00357400332DE2 /* Frameworks */,
 				486704922C00357400332DE2 /* Resources */,
+				413740BB8DFF2CFF9A1BA839 /* [CP] Embed Pods Frameworks */,
+				9D642CD76C41072C01E18B5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,6 +460,177 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B12263F16E4A43002875A7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		413740BB8DFF2CFF9A1BA839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		672B79FF6223D0E210CEA6F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TennisPro_OrbitalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9701FED20D27EA846E1F0238 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TennisPro_Orbital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D642CD76C41072C01E18B5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D479FD7F1CF594AA758E4BC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C0117BDB6B98D2CB04348C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_Orbital/Pods-TennisPro_Orbital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53B752F640DBAB68ABBF26F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TennisPro_Orbital-TennisPro_OrbitalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDEA05D1C4B1278DE8D74011 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TennisPro_OrbitalTests/Pods-TennisPro_OrbitalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		486704742C00357300332DE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -389,9 +639,12 @@
 				DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */,
 				DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */,
 				DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */,
+				48BB26D42C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
 				DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */,
 				4867047E2C00357300332DE2 /* ContentView.swift in Sources */,
 				DEAD78382C1C32D7009CD325 /* ViewModelForum.swift in Sources */,
+				48BB26CC2C2D063300FB7260 /* HittingView.swift in Sources */,
+				48BB26D82C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
 				DE0E82C12C0498C20009522F /* loginPage.swift in Sources */,
 				DEAD78342C1C2A15009CD325 /* forum.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
@@ -401,7 +654,10 @@
 				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
 				DEAD78362C1C32BF009CD325 /* ForumVideo.swift in Sources */,
+				48BB26D02C2E38F500FB7260 /* PhotoViewModel.swift in Sources */,
 				DE0E82C42C0587640009522F /* Function.swift in Sources */,
+				48BB26C82C2D062000FB7260 /* BackswingView.swift in Sources */,
+				48BB26C42C2D03B600FB7260 /* AnalysisView.swift in Sources */,
 				DE0E82C62C058DB90009522F /* signUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +666,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BB26C52C2D03B600FB7260 /* AnalysisView.swift in Sources */,
+				48BB26D52C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
 				4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */,
+				48BB26CD2C2D063300FB7260 /* HittingView.swift in Sources */,
+				48BB26C92C2D062000FB7260 /* BackswingView.swift in Sources */,
+				48BB26D12C2E38F500FB7260 /* PhotoViewModel.swift in Sources */,
+				48BB26D92C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +681,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				486704992C00357400332DE2 /* TennisPro_OrbitalUITests.swift in Sources */,
+				48BB26D22C2E38F500FB7260 /* PhotoViewModel.swift in Sources */,
+				48BB26CE2C2D063300FB7260 /* HittingView.swift in Sources */,
+				48BB26DA2C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
+				48BB26D62C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
+				48BB26C62C2D03B600FB7260 /* AnalysisView.swift in Sources */,
+				48BB26CA2C2D062000FB7260 /* BackswingView.swift in Sources */,
 				4867049B2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +744,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -539,7 +807,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -560,6 +828,7 @@
 		};
 		4867049F2C00357400332DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB6C67DFC83E7098BC1E2D9 /* Pods-TennisPro_Orbital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -589,6 +858,7 @@
 		};
 		486704A02C00357400332DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8655DFA32E91989376335A /* Pods-TennisPro_Orbital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -618,6 +888,7 @@
 		};
 		486704A22C00357400332DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7344A84EC341D984A1FEC3D8 /* Pods-TennisPro_OrbitalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -637,6 +908,7 @@
 		};
 		486704A32C00357400332DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C260100E6DDBEAAF4CD7D168 /* Pods-TennisPro_OrbitalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,6 +928,7 @@
 		};
 		486704A52C00357400332DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE726A7822DD7E9D869AE329 /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -673,6 +946,7 @@
 		};
 		486704A62C00357400332DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B63A590FF009657CCE5AC0C /* Pods-TennisPro_Orbital-TennisPro_OrbitalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -40,7 +40,7 @@ struct mainPage: View {
                       Image(systemName: "plus.circle")
                           .font(.system(size: 50))
                   })
-            .navigationTitle("History")
+            .navigationTitle("Backswing Analysis")
         }
      
         

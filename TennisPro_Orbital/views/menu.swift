@@ -12,31 +12,23 @@ struct menu: View {
     @State var degreesRotating = 0.0
     var body: some View {
         VStack(spacing:50){
-
-            Text("Welcome to TennisPro!").font(.system(size: 45, weight: .light, design: .serif))
+           Spacer()
+            Spacer()
+            Image("Tennisbackground")
+                .resizable()
+                .scaledToFit()
+                .frame( width:300, height: 200)
+            
+            Spacer()
+            Text("Choose one of the options below to boost your tennis performance!").font(.system(size:25, weight: .light, design: .serif))
                 .italic()
                 .frame(alignment:.center)
                 
-            Image("tennis")
-                .resizable()
-                .scaledToFit()
-                .frame( width:150, height: 100)
-                .rotationEffect(.degrees(degreesRotating))
-                .onAppear {
-                    withAnimation(.easeInOut(duration: 1)
-                        .speed(0.1).repeatForever(autoreverses: false)) {
-                            degreesRotating = 360.0
-                        }
-                }
-            
-           
-           Spacer()
-            Spacer()
         
             Button(action: {
-                currentShowingView="main"
+                currentShowingView="analysis"
             }, label: {
-               Text("History")
+               Text("Analysis")
            })
            .frame(width: 250,height: 20)
            .padding()
