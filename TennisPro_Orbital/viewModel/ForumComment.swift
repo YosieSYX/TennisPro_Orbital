@@ -39,7 +39,7 @@ class ForumComment: ObservableObject{
         service.uploadComment(comment: comment, documentId: documentId){success in
             if success{//dismiss screen
                 self.didUploadComment = true
-                print("successfully upload comment")
+                print("DEBUG:successfully upload comment")
             }else{//show error message to user
                 
             }
