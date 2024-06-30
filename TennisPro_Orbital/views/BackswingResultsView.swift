@@ -110,8 +110,8 @@ struct BackswingResultsView: View {
             return "No poses detected."
         } else {
             for pose in poses{
-                var rightElbow = pose.landmark(ofType: .rightElbow)
-                var rightWrist = pose.landmark(ofType: .rightWrist)
+                let rightElbow = pose.landmark(ofType: .rightElbow)
+                let rightWrist = pose.landmark(ofType: .rightWrist)
                 if(rightElbow.position.y - rightWrist.position.y < 5)
                 {
                     return "Stretch out your right arm a bit more!"
