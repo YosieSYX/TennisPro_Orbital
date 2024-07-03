@@ -7,12 +7,11 @@
 
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct FetchComment: Identifiable, Decodable{
-    let uid: String
-    let comment: String
-    let timestamp: String
-   
+struct FetchComment: Identifiable, Codable{
+    var comment: String
+    var uid: String
     var id: String{
         return NSUUID().uuidString
     }

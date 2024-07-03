@@ -13,7 +13,7 @@ struct comment: View {
     @State private var isLiked = false
     @State private var isTextfieldVisible = false
     
-    @ObservedObject var viewModel : ForumComment
+    @StateObject var viewModel : ForumComment
     let videoUrl:String
     let id: String
     
@@ -21,8 +21,8 @@ struct comment: View {
     init(videoUrl:String,id:String){
         self.videoUrl = videoUrl
         self.id = id
-        self.viewModel = ForumComment(documentId: id)
-    }
+        _viewModel = StateObject(wrappedValue: ForumComment(documentId: id))
+            }
     
     
     var body: some View {
@@ -31,16 +31,16 @@ struct comment: View {
                 .frame(height: 300)
             
             ScrollView{
-                Text("TESTING: this is the video id: " + id)
+                
                 ForEach(viewModel.comments){comment in
-                    
-                    VStack{
-                        Text(comment.uid)
-                        Text(comment.comment)
-                        Text(comment.timestamp)
-                    }
+                    Text("user: \(comment.uid)")
+                    Text(comment.comment)
+                    Divider()
+                        .frame(height: 5)
+                        .padding()
                 }
             }
+            
             HStack{
                 Spacer()
                 Button(action: {
@@ -49,13 +49,14 @@ struct comment: View {
                     Image(systemName: isLiked ? "heart.fill" : "heart")
                     
                 })
-                .sheet(isPresented: $isTextfieldVisible, content: {
-                    textBox(isTextfieldVisible: $isTextfieldVisible, id:id )
-                })
+               
                 Button(action: {
                     isTextfieldVisible = true
                 }, label: {
                     Image(systemName: "text.bubble")
+                })
+                .sheet(isPresented: $isTextfieldVisible, content: {
+                    textBox(isTextfieldVisible: $isTextfieldVisible, id:id )
                 })
             }
         }

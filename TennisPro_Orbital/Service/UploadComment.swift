@@ -14,7 +14,9 @@ struct UploadComment {
     func uploadComment(comment:String, documentId:String, completion:@escaping(Bool) ->Void){
         guard let uid = Auth.auth().currentUser? .uid else{return}
         
-        let data = ["uid": uid,"comment":comment,"timestamp":Timestamp(date: Date())] as [String : Any]
+        let data = ["uid": uid,"comment":comment] as [String : Any]
+        
+        print("In servicd UploadComment: documentId receivd:\(documentId)")
         
         Firestore.firestore().collection("forum").document(documentId).collection("comments").document().setData(data) {error in
             if let error = error {

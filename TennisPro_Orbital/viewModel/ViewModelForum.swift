@@ -23,7 +23,7 @@ class ViewModelForum: ObservableObject{
         Task{
             do{
                 try await fetchVideos()
-                print("successfully fetched")
+                print("videos successfully fetched")
             }catch{
                 print("Failed to fetch video:\(error.localizedDescription)")
             }
@@ -35,13 +35,9 @@ class ViewModelForum: ObservableObject{
             return}
         
         guard let postVideoData = try await postItem.loadTransferable(type: Data.self) else{return }
-        print("start to retirbe postVideourl")
         
         guard let postVideourl = try await ForumVideo.uploadVideo(withData: postVideoData)else{
-            print("unsuccessful retrieve postVideourl")
             return}
-        print("successful retrive postVideourl")
-        print("retirive url"+postVideourl)
         // Update one field, creating the document if it does not exist.
    
        try await Firestore.firestore().collection("forum").document().setData(["videoUrl":postVideourl])
@@ -56,18 +52,20 @@ class ViewModelForum: ObservableObject{
     
     @MainActor
     func fetchVideos() async throws{
-        print("I reach here 1")
         let snapshot=try await Firestore.firestore().collection("forum").getDocuments()
-        print("I reach here 2")
         for doc in snapshot.documents{
             print(doc.data())
         }
         self.videos = snapshot.documents.compactMap(
             { try?$0.data(as: FetchVideo.self)
             })
-
-        
+       
+        for video in videos{
+            print("This is video id fetched:\(video.id ?? "nil")")
+        }
+        print("DEBUG: finish fetching videos")
     }
     
 }
+
 
