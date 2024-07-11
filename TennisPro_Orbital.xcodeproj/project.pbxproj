@@ -18,6 +18,9 @@
 		4870B4332C31AB8F002684CF /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4870B4322C31AB8F002684CF /* Detection.swift */; };
 		4870B4342C31AB8F002684CF /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4870B4322C31AB8F002684CF /* Detection.swift */; };
 		4870B4352C31AB8F002684CF /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4870B4322C31AB8F002684CF /* Detection.swift */; };
+		488E5A512C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
+		488E5A522C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
+		488E5A532C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
 		48BB26C42C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
 		48BB26C52C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
 		48BB26C62C2D03B600FB7260 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB26C32C2D03B600FB7260 /* AnalysisView.swift */; };
@@ -106,6 +109,7 @@
 		486704982C00357400332DE2 /* TennisPro_OrbitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITests.swift; sourceTree = "<group>"; };
 		4867049A2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisPro_OrbitalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4870B4322C31AB8F002684CF /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittingResultsView.swift; sourceTree = "<group>"; };
 		48BB26C32C2D03B600FB7260 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 		48BB26C72C2D062000FB7260 /* BackswingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackswingView.swift; sourceTree = "<group>"; };
 		48BB26CB2C2D063300FB7260 /* HittingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittingView.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 				48BB26C32C2D03B600FB7260 /* AnalysisView.swift */,
 				48BB26C72C2D062000FB7260 /* BackswingView.swift */,
 				48BB26CB2C2D063300FB7260 /* HittingView.swift */,
+				488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */,
 				48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */,
 			);
 			path = views;
@@ -678,6 +683,7 @@
 				DEAD78322C1C107C009CD325 /* menu.swift in Sources */,
 				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
+				488E5A512C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */,
 				DE217C7C2C303451009051DD /* FetchComment.swift in Sources */,
 				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
@@ -696,6 +702,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BB26C52C2D03B600FB7260 /* AnalysisView.swift in Sources */,
+				488E5A522C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */,
 				4870B4342C31AB8F002684CF /* Detection.swift in Sources */,
 				48BB26D52C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
 				4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */,
@@ -719,6 +726,7 @@
 				48BB26CA2C2D062000FB7260 /* BackswingView.swift in Sources */,
 				4870B4352C31AB8F002684CF /* Detection.swift in Sources */,
 				4867049B2C00357400332DE2 /* TennisPro_OrbitalUITestsLaunchTests.swift in Sources */,
+				488E5A532C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

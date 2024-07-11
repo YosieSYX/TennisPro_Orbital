@@ -19,34 +19,19 @@ struct BackswingResultsView: View {
     
     var body: some View {
         VStack {
-            if let image = uploadedImage {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .padding()
-                
-                Button("Process Image") {
-                    processImage()
-                }
-                .padding()
-                
-                Text(analysisText)
-                    .padding()
-                Button(action: {
-                    currentShowingView="menu"
-                }, label: {
-                    Text("Go back to menu page.")
-                })
-            } else {
-                Button("Fetch Uploaded Photo") {
-                    fetchPhoto()
-                }
-                .padding()
+            Button("Process Image") {
+                processImage()
             }
+            .padding()
+            Text(analysisText)
+                .padding()
+            Button(action: {
+                currentShowingView="menu"
+            }, label: {
+                Text("Go back to menu page.")
+            })
         }
-        .padding()
-    }
+    }                        
     
     private func fetchPhoto() {
         guard let userId = Auth.auth().currentUser?.uid else {
@@ -89,6 +74,7 @@ struct BackswingResultsView: View {
     }
     
     private func processImage() {
+        fetchPhoto()
         if let image = uploadedImage {
             detection.getResults(from: image) { poseResults in
                 if let poseResults = poseResults {

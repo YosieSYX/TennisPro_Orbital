@@ -41,11 +41,9 @@ struct AuthView: View {
                 else if(currentShowingView=="backswingAnalysis"){
                     BackswingResultsView(currentShowingView: $currentShowingView)
                 }
-                
-                
-                
-                
-                
+                else if(currentShowingView=="hittingAnalysis"){
+                    HittingResultsView(currentShowingView: $currentShowingView)
+                }
             }
         }
     }
