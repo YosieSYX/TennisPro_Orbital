@@ -37,6 +37,8 @@ struct menu: View {
            .foregroundColor(.white)
             
            
+            
+            
             Button(action: {
                 currentShowingView="forum"
             }, label: {
@@ -47,6 +49,20 @@ struct menu: View {
            .background(Color.black)
            .cornerRadius(10.0)
            .foregroundColor(.white)
+            
+            
+            
+             Button(action: {
+                 currentShowingView="profile"
+             }, label: {
+                Text("profile")
+            })
+            .frame(width: 250,height: 20)
+            .padding()
+            .background(Color.black)
+            .cornerRadius(10.0)
+            .foregroundColor(.white)
+            
            Spacer()
             }
         }

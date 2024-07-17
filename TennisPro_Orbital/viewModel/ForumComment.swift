@@ -17,6 +17,7 @@ class ForumComment: ObservableObject{
     @Published var comments = [FetchComment]()
     @Published var didUploadComment = false
     let service = UploadComment()
+    let userService = UserService()
     var documentId:String
     
     
@@ -57,12 +58,11 @@ class ForumComment: ObservableObject{
             { try?$0.data(as:FetchComment.self)
             })
         print("DEBUG:finish mapping")
-        for comment in comments {
-           
-            print("DEBUG: comment mapped and content is\(comment.uid)")
-            
-            
+        for i in 0..<comments.count{
+            let uid = comments[i].uid
+            userService.fetchUser(WithUid: uid) { user in
+                self.comments[i].user = user
+            }
         }
-        
     }
 }

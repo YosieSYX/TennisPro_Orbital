@@ -52,7 +52,17 @@
 		DE217C782C303383009051DD /* UploadComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C772C303383009051DD /* UploadComment.swift */; };
 		DE217C7A2C3033C1009051DD /* ForumComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C792C3033C1009051DD /* ForumComment.swift */; };
 		DE217C7C2C303451009051DD /* FetchComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE217C7B2C303451009051DD /* FetchComment.swift */; };
+		DE41B25B2C3F860A00134227 /* editProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B25A2C3F860A00134227 /* editProfile.swift */; };
+		DE41B2602C3FD5F200134227 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B25F2C3FD5F200134227 /* ImagePicker.swift */; };
+		DE41B2622C3FF49900134227 /* ProfilePhotoUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B2612C3FF49900134227 /* ProfilePhotoUpload.swift */; };
+		DE41B2642C40043900134227 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B2632C40043900134227 /* EditProfileViewModel.swift */; };
+		DE41B2662C40FC2200134227 /* FetchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41B2652C40FC2200134227 /* FetchUser.swift */; };
 		DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */; };
+		DE6FDCA12C45619600F42570 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE6FDCA02C45619600F42570 /* Kingfisher */; };
+		DE6FDCA42C46BD6B00F42570 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6FDCA32C46BD6B00F42570 /* UserService.swift */; };
+		DE89762E2C3E3A5C0001FA53 /* userProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89762D2C3E3A5C0001FA53 /* userProfile.swift */; };
+		DE8976302C3E46500001FA53 /* ProfileFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89762F2C3E46500001FA53 /* ProfileFilterViewModel.swift */; };
+		DE8976322C3E62440001FA53 /* FetchPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8976312C3E62440001FA53 /* FetchPost.swift */; };
 		DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD78212C118AEF009CD325 /* uploadView.swift */; };
 		DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */; };
 		DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DEAD78252C188374009CD325 /* FirebaseMLModelDownloader */; };
@@ -123,7 +133,16 @@
 		DE217C772C303383009051DD /* UploadComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadComment.swift; sourceTree = "<group>"; };
 		DE217C792C3033C1009051DD /* ForumComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumComment.swift; sourceTree = "<group>"; };
 		DE217C7B2C303451009051DD /* FetchComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchComment.swift; sourceTree = "<group>"; };
+		DE41B25A2C3F860A00134227 /* editProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfile.swift; sourceTree = "<group>"; };
+		DE41B25F2C3FD5F200134227 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DE41B2612C3FF49900134227 /* ProfilePhotoUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoUpload.swift; sourceTree = "<group>"; };
+		DE41B2632C40043900134227 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		DE41B2652C40FC2200134227 /* FetchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUser.swift; sourceTree = "<group>"; };
 		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DE6FDCA32C46BD6B00F42570 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		DE89762D2C3E3A5C0001FA53 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
+		DE89762F2C3E46500001FA53 /* ProfileFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterViewModel.swift; sourceTree = "<group>"; };
+		DE8976312C3E62440001FA53 /* FetchPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPost.swift; sourceTree = "<group>"; };
 		DEAD78212C118AEF009CD325 /* uploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadView.swift; sourceTree = "<group>"; };
 		DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideo.swift; sourceTree = "<group>"; };
@@ -149,6 +168,7 @@
 				DE0E82B82C0470760009522F /* FirebaseStorage in Frameworks */,
 				DE0E82B22C0470760009522F /* FirebaseAuth in Frameworks */,
 				DEAD78242C188374009CD325 /* FirebaseAppDistribution-Beta in Frameworks */,
+				DE6FDCA12C45619600F42570 /* Kingfisher in Frameworks */,
 				DEAD78262C188374009CD325 /* FirebaseMLModelDownloader in Frameworks */,
 				DEAD783E2C1D64BC009CD325 /* FirebaseFirestoreSwift in Frameworks */,
 				DE217C6E2C301C03009051DD /* FirebaseDynamicLinks in Frameworks */,
@@ -201,6 +221,7 @@
 		4867047A2C00357300332DE2 /* TennisPro_Orbital */ = {
 			isa = PBXGroup;
 			children = (
+				DE41B25E2C3FD5E300134227 /* Utils */,
 				DEAD783A2C1D63B6009CD325 /* Model */,
 				DEAD782E2C1ABB71009CD325 /* Service */,
 				DEAD78292C1AA262009CD325 /* viewModel */,
@@ -267,8 +288,10 @@
 		DE0E82BD2C0495300009522F /* views */ = {
 			isa = PBXGroup;
 			children = (
-				DE0E82C02C0498C20009522F /* loginPage.swift */,
 				DE0E82C52C058DB90009522F /* signUp.swift */,
+				DE0E82C02C0498C20009522F /* loginPage.swift */,
+				DE89762D2C3E3A5C0001FA53 /* userProfile.swift */,
+				DE41B25A2C3F860A00134227 /* editProfile.swift */,
 				DE0E82CD2C05BF2F0009522F /* mainPage.swift */,
 				DEAD78332C1C2A15009CD325 /* forum.swift */,
 				DE217C732C303320009051DD /* comment.swift */,
@@ -293,10 +316,20 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
+		DE41B25E2C3FD5E300134227 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE41B25F2C3FD5F200134227 /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DEAD78292C1AA262009CD325 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DEAD782C2C1AA45F009CD325 /* ContentViewModel.swift */,
+				DE41B2632C40043900134227 /* EditProfileViewModel.swift */,
+				DE89762F2C3E46500001FA53 /* ProfileFilterViewModel.swift */,
 				DE217C792C3033C1009051DD /* ForumComment.swift */,
 				DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */,
 				48BB26CF2C2E38F500FB7260 /* PhotoViewModel.swift */,
@@ -308,9 +341,11 @@
 			isa = PBXGroup;
 			children = (
 				DEAD782F2C1ABB89009CD325 /* UploadVideo.swift */,
+				DE6FDCA32C46BD6B00F42570 /* UserService.swift */,
 				DEAD78352C1C32BF009CD325 /* ForumVideo.swift */,
 				DE217C772C303383009051DD /* UploadComment.swift */,
 				48BB26D32C2E3FE300FB7260 /* PhotoUpload.swift */,
+				DE41B2612C3FF49900134227 /* ProfilePhotoUpload.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -320,6 +355,8 @@
 			children = (
 				DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */,
 				DE217C7B2C303451009051DD /* FetchComment.swift */,
+				DE41B2652C40FC2200134227 /* FetchUser.swift */,
+				DE8976312C3E62440001FA53 /* FetchPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +392,7 @@
 				DEAD783D2C1D64BC009CD325 /* FirebaseFirestoreSwift */,
 				DEAD78882C22C269009CD325 /* FirebaseDatabaseSwift */,
 				DE217C6D2C301C03009051DD /* FirebaseDynamicLinks */,
+				DE6FDCA02C45619600F42570 /* Kingfisher */,
 			);
 			productName = TennisPro_Orbital;
 			productReference = 486704782C00357300332DE2 /* TennisPro_Orbital.app */;
@@ -439,6 +477,7 @@
 			mainGroup = 4867046F2C00357300332DE2;
 			packageReferences = (
 				DE0E82AE2C0470760009522F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DE6FDC9F2C45619600F42570 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 486704792C00357300332DE2 /* Products */;
 			projectDirPath = "";
@@ -657,6 +696,8 @@
 				DE217C782C303383009051DD /* UploadComment.swift in Sources */,
 				DEAD783C2C1D63C8009CD325 /* FetchVideo.swift in Sources */,
 				DEAD78302C1ABB89009CD325 /* UploadVideo.swift in Sources */,
+				DE41B2602C3FD5F200134227 /* ImagePicker.swift in Sources */,
+				DE41B25B2C3F860A00134227 /* editProfile.swift in Sources */,
 				DE0E82CA2C05B3DC0009522F /* AuthView.swift in Sources */,
 				48BB26D42C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
 				DEAD78222C118AEF009CD325 /* uploadView.swift in Sources */,
@@ -666,12 +707,17 @@
 				DE217C7A2C3033C1009051DD /* ForumComment.swift in Sources */,
 				48BB26D82C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
 				DE0E82C12C0498C20009522F /* loginPage.swift in Sources */,
+				DE6FDCA42C46BD6B00F42570 /* UserService.swift in Sources */,
+				DE89762E2C3E3A5C0001FA53 /* userProfile.swift in Sources */,
+				DE8976302C3E46500001FA53 /* ProfileFilterViewModel.swift in Sources */,
 				DEAD78342C1C2A15009CD325 /* forum.swift in Sources */,
 				DE217C742C303320009051DD /* comment.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
+				DE8976322C3E62440001FA53 /* FetchPost.swift in Sources */,
 				DEAD78322C1C107C009CD325 /* menu.swift in Sources */,
 				DE6CDB802C100C66003A5C64 /* WelcomeView.swift in Sources */,
 				486704802C00357300332DE2 /* Item.swift in Sources */,
+				DE41B2622C3FF49900134227 /* ProfilePhotoUpload.swift in Sources */,
 				DE217C7C2C303451009051DD /* FetchComment.swift in Sources */,
 				DEAD782D2C1AA45F009CD325 /* ContentViewModel.swift in Sources */,
 				4867047C2C00357300332DE2 /* TennisPro_OrbitalApp.swift in Sources */,
@@ -680,8 +726,10 @@
 				DE0E82C42C0587640009522F /* Function.swift in Sources */,
 				48BB26C82C2D062000FB7260 /* BackswingView.swift in Sources */,
 				48BB26C42C2D03B600FB7260 /* AnalysisView.swift in Sources */,
+				DE41B2642C40043900134227 /* EditProfileViewModel.swift in Sources */,
 				DE0E82C62C058DB90009522F /* signUp.swift in Sources */,
 				DE217C762C303335009051DD /* textBox.swift in Sources */,
+				DE41B2662C40FC2200134227 /* FetchUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1083,14 @@
 				minimumVersion = 10.26.0;
 			};
 		};
+		DE6FDC9F2C45619600F42570 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1066,6 +1122,11 @@
 		DE217C6D2C301C03009051DD /* FirebaseDynamicLinks */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseDynamicLinks;
+		};
+		DE6FDCA02C45619600F42570 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6FDC9F2C45619600F42570 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		DEAD78232C188374009CD325 /* FirebaseAppDistribution-Beta */ = {
 			isa = XCSwiftPackageProductDependency;

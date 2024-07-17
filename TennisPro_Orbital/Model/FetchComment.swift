@@ -15,4 +15,5 @@ struct FetchComment: Identifiable, Codable{
     var id: String{
         return NSUUID().uuidString
     }
+    var user: FetchUser?
 }

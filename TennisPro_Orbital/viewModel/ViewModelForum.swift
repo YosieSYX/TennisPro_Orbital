@@ -30,6 +30,8 @@ class ViewModelForum: ObservableObject{
         }
         
     }
+    
+    
     func uploadVideo() async throws{
         guard let postItem = selectedPost else{
             return}
@@ -38,9 +40,17 @@ class ViewModelForum: ObservableObject{
         
         guard let postVideourl = try await ForumVideo.uploadVideo(withData: postVideoData)else{
             return}
+       
+        let userId = Auth.auth().currentUser?.uid
+        let userIdString = userId?.description ?? ""
+      
         // Update one field, creating the document if it does not exist.
-   
-       try await Firestore.firestore().collection("forum").document().setData(["videoUrl":postVideourl])
+        print("here4")
+      let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl])
+        print("here2")
+        try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").document().setData(["videoId":ref.documentID,"videoUrl": postVideourl])
+        
+        print("here3")
         
         
         

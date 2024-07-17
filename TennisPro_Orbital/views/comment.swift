@@ -8,6 +8,7 @@
 import SwiftUI
 import PhotosUI
 import AVKit
+import Kingfisher
 
 struct comment: View {
     @State private var isLiked = false
@@ -33,8 +34,27 @@ struct comment: View {
             ScrollView{
                 
                 ForEach(viewModel.comments){comment in
-                    Text("user: \(comment.uid)")
-                    Text(comment.comment)
+                    VStack(alignment:.leading){
+                        HStack{
+                            if let imageUrl=comment.user?.imageUrl,!imageUrl.isEmpty{
+                                KFImage(URL(string:imageUrl))
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .clipShape(Circle())
+                                    .frame(width:40, height: 40)
+                                    .overlay(Circle().stroke(Color.black,lineWidth: 2))
+                            }else{
+                                Image(systemName: "person")
+                                    .frame(width:10,height:10)
+                            }
+                            
+                            Text(comment.user?.user_name ?? "user123456")
+                            Spacer()
+                        }
+
+                        Text(comment.comment)
+                    }
+                    
                     Divider()
                         .frame(height: 5)
                         .padding()
