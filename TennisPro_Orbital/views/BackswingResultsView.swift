@@ -5,32 +5,34 @@
 //  Created by Yuexi Song on 27/6/24.
 //
 
-
 import SwiftUI
 import FirebaseStorage
 import FirebaseAuth
+import MLKitPoseDetection
 
 struct BackswingResultsView: View {
+    @State private var detection = Detection()
     @State private var uploadedImage: UIImage?
+    @State private var poseResults: [Pose] = []
+    @State private var analysisText: String = ""
     @Binding var currentShowingView: String
     
     var body: some View {
         VStack {
-            if let image = uploadedImage {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .padding()
-            } else {
-                Button("Fetch Uploaded Photo") {
-                    fetchPhoto()
-                }
+            Button("Process Image") {
+                processImage()
             }
+            .padding()
+            Text(analysisText)
+                .padding()
+            Button(action: {
+                currentShowingView="menu"
+            }, label: {
+                Text("Go back to menu page.")
+            })
         }
-        .padding()
-    }
-     
+    }                        
+    
     private func fetchPhoto() {
         guard let userId = Auth.auth().currentUser?.uid else {
             print("User not authenticated")
@@ -69,5 +71,39 @@ struct BackswingResultsView: View {
         }
         
         return data
+    }
+    
+    private func processImage() {
+        fetchPhoto()
+        if let image = uploadedImage {
+            detection.getResults(from: image) { poseResults in
+                if let poseResults = poseResults {
+                    self.poseResults = poseResults
+                    self.analysisText = analysisStatement(for: poseResults)
+                } else {
+                    self.poseResults = []
+                    self.analysisText = "No poses detected or error occurred."
+                    print("Image file not processed")
+                }
+            }
+        } else {
+            print("No uploaded image to process")
+        }
+    }
+    
+    private func analysisStatement(for poses: [Pose]) -> String {
+        if poses.isEmpty {
+            return "No poses detected."
+        } else {
+            for pose in poses{
+                let rightElbow = pose.landmark(ofType: .rightElbow)
+                let rightWrist = pose.landmark(ofType: .rightWrist)
+                if(rightElbow.position.y - rightWrist.position.y < 5)
+                {
+                    return "Stretch out your right arm a bit more!"
+                }
+            }
+            return "Your position looks good!"
+        }
     }
 }

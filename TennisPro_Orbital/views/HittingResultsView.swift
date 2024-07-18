@@ -1,86 +1,55 @@
 //
-//  HittingView.swift
+//  HittingResultsView.swift
 //  TennisPro_Orbital
 //
 //  Created by Yuexi Song on 26/6/24.
 //
 
 import SwiftUI
-import PhotosUI
 import FirebaseStorage
 import FirebaseAuth
 import MLKitPoseDetection
 
-struct HittingView: View {
-    @Binding var currentShowingView: String
+struct HittingResultsView: View {
     @State private var detection = Detection()
     @State private var uploadedImage: UIImage?
     @State private var poseResults: [Pose] = []
     @State private var analysisText1: String = ""
     @State private var analysisText2: String = ""
-    @StateObject var viewModel = ContentViewModel()
+    @Binding var currentShowingView: String
+    
     var body: some View {
-        NavigationStack{
-            VStack{
-                if let image = uploadedImage{
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 200, height: 200)
-                        .padding()
-                    
-                    Text(analysisText1)
-                    Text(analysisText2)
-                        .padding()
-
-                    
+        VStack {
+            if let image = uploadedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .padding()
+                
+                Button("Process Image") {
+                    processImage()
                 }
-                else{
-                    Text("Hitting Analysis").font(.system(size: 45, weight: .light, design: .serif)).frame(alignment:.center)
-                    Text("Please take a photo of your forehand hitting position.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic().frame(alignment:.center)
-                    Text("Photo should be taken from the front of you.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic()
-                    Text("An example is shown below.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic().frame(alignment:.center)
-                    Image("roger forehand")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:300, height: 200)
-                    PhotosPicker(selection: $viewModel.selectedItem, matching: .images) {
-                        Text("Upload photo here for analysis")
-                    }
-                    .onChange(of: viewModel.selectedItem) { newItem in
-                        Task {
-                            if let newItem = newItem {
-                                if let data = try? await newItem.loadTransferable(type: Data.self),
-                                   let image = UIImage(data: data) {
-                                    uploadedImage = image
-                                    // Process image and navigate to menu
-                                    processImage()
-                                }
-                            }
-                        }
-                    }
+                .padding()
+                
+                Text(analysisText1)
+                Text(analysisText2)
+                    .padding()
+                Button(action: {
+                    currentShowingView="menu"
+                }, label: {
+                    Text("Go back to menu page.")
+                })
+            } else {
+                Button("Fetch Uploaded Photo") {
+                    fetchPhoto()
                 }
-            }
-            .toolbar {
-                Button(action: {
-                    currentShowingView = "welcome"
-                }, label: {
-                    Text("Log out")
-                })
-                Button(action: {
-                    currentShowingView = "menu"
-                }, label: {
-                    Text("Menu")
-                })
+                .padding()
             }
         }
+        .padding()
     }
-
-                
-            
+    
     private func fetchPhoto() {
         guard let userId = Auth.auth().currentUser?.uid else {
             print("User not authenticated")
@@ -175,4 +144,5 @@ struct HittingView: View {
             return "Your elbow position looks good!"
         }
     }
+
 }
