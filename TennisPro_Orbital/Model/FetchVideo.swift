@@ -6,10 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct FetchVideo: Identifiable, Decodable{
+struct FetchVideo: Identifiable,Codable{
+    @DocumentID var id: String?
     let videoUrl: String
-    var id: String{
-        return NSUUID().uuidString
-    }
+   
 }

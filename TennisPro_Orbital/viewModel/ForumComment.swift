@@ -17,6 +17,7 @@ class ForumComment: ObservableObject{
     @Published var comments = [FetchComment]()
     @Published var didUploadComment = false
     let service = UploadComment()
+    let userService = UserService()
     var documentId:String
     
     
@@ -51,13 +52,17 @@ class ForumComment: ObservableObject{
     func fetchComments(forDocumentId documentId:String) async throws{
         let snapshot=try await Firestore.firestore().collection("forum").document(documentId).collection("comments").getDocuments()
         for doc in snapshot.documents{
-            print(doc.data())
+            print("DEBUG:This is the fetch comment print statement 1\(doc.data())")
         }
         self.comments = snapshot.documents.compactMap(
             { try?$0.data(as:FetchComment.self)
             })
-
-        
+        print("DEBUG:finish mapping")
+        for i in 0..<comments.count{
+            let uid = comments[i].uid
+            userService.fetchUser(WithUid: uid) { user in
+                self.comments[i].user = user
+            }
+        }
     }
-    
 }

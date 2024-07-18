@@ -32,6 +32,7 @@ struct forum: View {
                                 .cornerRadius(10)
                         }
                     }
+                    Divider()
                 }
             }
             .refreshable {
@@ -48,9 +49,11 @@ struct forum: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    
                     PhotosPicker(selection: $viewModel.selectedPost, matching: .any(of: [.videos, .not(.images)])){
                         Image(systemName: "plus")
                     }
+                    
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {

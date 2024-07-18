@@ -8,12 +8,13 @@
 import SwiftUI
 import PhotosUI
 import AVKit
+import Kingfisher
 
 struct comment: View {
     @State private var isLiked = false
     @State private var isTextfieldVisible = false
     
-    @ObservedObject var viewModel : ForumComment
+    @StateObject var viewModel : ForumComment
     let videoUrl:String
     let id: String
     
@@ -21,8 +22,8 @@ struct comment: View {
     init(videoUrl:String,id:String){
         self.videoUrl = videoUrl
         self.id = id
-        self.viewModel = ForumComment(documentId: id)
-    }
+        _viewModel = StateObject(wrappedValue: ForumComment(documentId: id))
+            }
     
     
     var body: some View {
@@ -31,16 +32,35 @@ struct comment: View {
                 .frame(height: 300)
             
             ScrollView{
-                Text("TESTING: this is the video id: " + id)
+                
                 ForEach(viewModel.comments){comment in
-                    
-                    VStack{
-                        Text(comment.uid)
+                    VStack(alignment:.leading){
+                        HStack{
+                            if let imageUrl=comment.user?.imageUrl,!imageUrl.isEmpty{
+                                KFImage(URL(string:imageUrl))
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .clipShape(Circle())
+                                    .frame(width:40, height: 40)
+                                    .overlay(Circle().stroke(Color.black,lineWidth: 2))
+                            }else{
+                                Image(systemName: "person")
+                                    .frame(width:10,height:10)
+                            }
+                            
+                            Text(comment.user?.user_name ?? "user123456")
+                            Spacer()
+                        }
+
                         Text(comment.comment)
-                        Text(comment.timestamp)
                     }
+                    
+                    Divider()
+                        .frame(height: 5)
+                        .padding()
                 }
             }
+            
             HStack{
                 Spacer()
                 Button(action: {
@@ -49,13 +69,14 @@ struct comment: View {
                     Image(systemName: isLiked ? "heart.fill" : "heart")
                     
                 })
-                .sheet(isPresented: $isTextfieldVisible, content: {
-                    textBox(isTextfieldVisible: $isTextfieldVisible, id:id )
-                })
+               
                 Button(action: {
                     isTextfieldVisible = true
                 }, label: {
                     Image(systemName: "text.bubble")
+                })
+                .sheet(isPresented: $isTextfieldVisible, content: {
+                    textBox(isTextfieldVisible: $isTextfieldVisible, id:id )
                 })
             }
         }

@@ -31,8 +31,7 @@ struct menu: View {
                     .italic()
                     .frame(alignment:.center)
                     .foregroundColor(.pink)
-                
-                HStack{
+        HStack{
                     Image("analysis") // Replace with your image name
                         .resizable()
                         .frame(width: 80, height: 80) // Adjust the size as needed
@@ -83,7 +82,9 @@ struct menu: View {
                     .cornerRadius(10.0)
                     .foregroundColor(.white)
                 }
+
             }
+          
         }
         .ignoresSafeArea()
     }

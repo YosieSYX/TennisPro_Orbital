@@ -13,7 +13,7 @@ struct UploadPhoto{
         let userId = Auth.auth().currentUser?.uid
         let userIdString = userId?.description ?? ""
         let ref = Storage.storage().reference().child(userIdString).child("backswing.jpeg")
-
+        
         let metadata = StorageMetadata()
         metadata.contentType = "image/jpeg"
         do{

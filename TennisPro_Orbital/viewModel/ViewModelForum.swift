@@ -23,28 +23,34 @@ class ViewModelForum: ObservableObject{
         Task{
             do{
                 try await fetchVideos()
-                print("successfully fetched")
+                print("videos successfully fetched")
             }catch{
                 print("Failed to fetch video:\(error.localizedDescription)")
             }
         }
         
     }
+    
+    
     func uploadVideo() async throws{
         guard let postItem = selectedPost else{
             return}
         
         guard let postVideoData = try await postItem.loadTransferable(type: Data.self) else{return }
-        print("start to retirbe postVideourl")
         
         guard let postVideourl = try await ForumVideo.uploadVideo(withData: postVideoData)else{
-            print("unsuccessful retrieve postVideourl")
             return}
-        print("successful retrive postVideourl")
-        print("retirive url"+postVideourl)
+       
+        let userId = Auth.auth().currentUser?.uid
+        let userIdString = userId?.description ?? ""
+      
         // Update one field, creating the document if it does not exist.
-   
-       try await Firestore.firestore().collection("forum").document().setData(["videoUrl":postVideourl])
+        print("here4")
+      let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl])
+        print("here2")
+        try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").document().setData(["videoId":ref.documentID,"videoUrl": postVideourl])
+        
+        print("here3")
         
         
         
@@ -56,18 +62,20 @@ class ViewModelForum: ObservableObject{
     
     @MainActor
     func fetchVideos() async throws{
-        print("I reach here 1")
         let snapshot=try await Firestore.firestore().collection("forum").getDocuments()
-        print("I reach here 2")
         for doc in snapshot.documents{
             print(doc.data())
         }
         self.videos = snapshot.documents.compactMap(
             { try?$0.data(as: FetchVideo.self)
             })
-
-        
+       
+        for video in videos{
+            print("This is video id fetched:\(video.id ?? "nil")")
+        }
+        print("DEBUG: finish fetching videos")
     }
     
 }
+
 

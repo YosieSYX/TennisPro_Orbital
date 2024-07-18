@@ -29,6 +29,9 @@ struct AuthView: View {
                 }else if(currentShowingView=="forum"){
                     forum(currentShowingView: $currentShowingView)
                 }
+                else if (currentShowingView=="profile"){
+                    userProfile(currentShowingView: $currentShowingView)
+                }
                 else if(currentShowingView=="analysis"){
                     AnalysisView(currentShowingView: $currentShowingView)
                 }
