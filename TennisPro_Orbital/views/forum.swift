@@ -8,6 +8,7 @@
 import SwiftUI
 import PhotosUI
 import AVKit
+import Kingfisher
 
 struct forum: View {
     @StateObject var viewModel = ViewModelForum()
@@ -20,18 +21,46 @@ struct forum: View {
               
             ScrollView{
                 ForEach(viewModel.videos){videos in
-                    VStack{
-                        VideoPlayer(player: AVPlayer(url: URL(string: videos.videoUrl)!))
-                            .frame(height:250)
+                    
+                        
                         NavigationLink(destination: comment(videoUrl: videos.videoUrl, id: videos.id ?? "defaultId")) {
-                            Text("see details")
-                                .frame(maxWidth: .infinity)
-                                .frame(height:40)
-                                .background(Color.gray)
-                                .foregroundColor(.blue)
-                                .cornerRadius(10)
+                            ZStack{
+                                Rectangle()
+                                    .fill(Color.clear)
+                                VStack{
+                                    HStack{
+                                        if let imageUrl=videos.user?.imageUrl,!imageUrl.isEmpty{
+                                            KFImage(URL(string:imageUrl))
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .clipShape(Circle())
+                                                .frame(width:40, height: 40)
+                                                .overlay(Circle().stroke(Color.black,lineWidth: 1))
+                                        }else{
+                                            Image(systemName: "person")
+                                                .frame(width:10,height:10)
+                                        }
+                                        Text(videos.user?.user_name ?? "user123456")
+                                        Spacer()
+                                    }
+                                    .padding([.top, .horizontal])
+                                    HStack{
+                                        VideoPlayer(player: AVPlayer(url: URL(string: videos.videoUrl)!))
+                                            .frame(width:250,height:150)
+                                            .padding(10)
+                                        Spacer()
+                                        Image(systemName: "chevron.forward")
+                                            .foregroundColor(.gray)
+                                            .opacity(10)
+                                            
+                                    }
+                                }
+                            }
+                            .frame(width:350, height:200)
+                            .padding()
+                         
                         }
-                    }
+                    
                     Divider()
                 }
             }
@@ -55,20 +84,17 @@ struct forum: View {
                     }
                     
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement:.navigationBarLeading) {
                     Button(action: {
                         currentShowingView = "menu"
                     }, label: {
-                        Text("menu")
+                        HStack{
+                            Image(systemName: "chevron.left")
+                            Text("menu")
+                        }
                     })
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        currentShowingView = "welcome"
-                    }, label: {
-                        Text("Log out")
-                    })
-                }
+                
             }
         }
         }

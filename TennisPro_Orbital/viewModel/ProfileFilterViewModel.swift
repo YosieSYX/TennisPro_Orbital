@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
+import Firebase
+import FirebaseFirestoreSwift
 
 enum ProfileFilterViewModel:Int,CaseIterable{
     case forumPost
@@ -31,6 +33,8 @@ class ForumPost:ObservableObject{
             do{
                 try await fetchUser()
                 print("posts successfully fetched")
+                try await fetchPost()
+                
             }catch{
                 print("Failed to fetch posts:\(error.localizedDescription)")
             }
@@ -65,19 +69,25 @@ class ForumPost:ObservableObject{
     @MainActor
     func fetchPost() async throws{
         let userId = Auth.auth().currentUser?.uid
-        let userIdString = userId?.description ?? ""
-        
-        let snapshot=try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").getDocuments()
+        let _ = userId?.description ?? ""
+        let ref = Firestore.firestore().collection("forum")
         print("here1")
-        for doc in snapshot.documents{
-            print(doc.data())
-        }
-        self.posts = snapshot.documents.compactMap(
-            { try?$0.data(as: FetchPost.self)
+        ref.whereField("userId", isEqualTo: userId).getDocuments(){snapshot,error in
+            if let error = error{
+                print("error getting posts\(error.localizedDescription)")
+                return
+            }
+            print("here2")
+            guard let documentFetched = snapshot?.documents else{
+                print("No post")
+                return
+            }
+           print("here3")
+            self.posts=documentFetched.compactMap(
+                {try?$0.data(as: FetchPost.self)
             })
-       
-        for post in posts{
-            print("This is videoId fetched:\(post.videoId)")
         }
+        print("here2")
+        
     }
 }

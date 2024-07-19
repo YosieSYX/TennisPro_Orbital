@@ -14,6 +14,7 @@ struct userProfile: View {
     @Binding var currentShowingView: String
     @State private var selectedItem:ProfileFilterViewModel = .forumPost
     @StateObject var viewModel = ForumPost()
+    @State private var emptyPost:Bool = false
     
     
     var body: some View {
@@ -46,8 +47,6 @@ struct userProfile: View {
             }
             
         }
-        
-        
         
     }
     
@@ -85,24 +84,36 @@ extension userProfile{
             Color(.systemBlue)
                 .ignoresSafeArea()
             VStack{
-                NavigationLink(destination: editProfile(userName: viewModel.document.user_name, introduction: viewModel.document.introduction,ImageUrl: viewModel.document.imageUrl)) {
-                    Text("Edit")
-                        .foregroundColor(.white)
-                }
                 
+                Spacer()
                 KFImage(URL(string: viewModel.document.imageUrl))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .clipShape(Circle())
                     .frame(width:100, height: 100)
-                    .overlay(Circle().stroke(Color.black,lineWidth: 2))
+                    .overlay(Circle().stroke(Color.black,lineWidth: 1))
                 
                 Text(viewModel.document.user_name)
                     .font(.title)
                 Text(viewModel.document.introduction)
                     .padding()
                     .frame(maxWidth: .infinity)
-                
+                   
+                Spacer()
+                NavigationLink(destination: editProfile(userName: viewModel.document.user_name, introduction: viewModel.document.introduction,ImageUrl: viewModel.document.imageUrl)) {
+                    HStack{
+                        Image(systemName:"pencil.line")
+                            .foregroundColor(.black)
+                        Text("Edit")
+                            .foregroundColor(.black)
+                             
+                    }
+                    .frame(width: 100,height: 30)
+                    .cornerRadius(20)
+                    .background(Color.white)
+                    .padding()
+                    
+                }
                
             }
             
@@ -112,20 +123,39 @@ extension userProfile{
     }
     
     var postView:some View{
+        
         ScrollView{
             LazyVStack{
                 ForEach(viewModel.posts){post in
-                    NavigationLink {
-                        comment(videoUrl: post.videoUrl, id: post.videoId)
-                    } label: {
-                        Text("my post,click for more details")
-                    }
+                  
+                        NavigationLink {
+                            comment(videoUrl: post.videoUrl, id: post.id ?? "None")
+                        } label: {
+                            HStack{
+                                VideoPlayer(player: AVPlayer(url: URL(string: post.videoUrl)!))
+                                    .frame(width:100,height:100)
+                                    .padding(10)
+                                Text("my post")
+                                    .frame(width: 150,height: 100)
+                                    .foregroundColor(.black)
+                            
+                                Image(systemName: "chevron.forward")
+                                    .foregroundColor(.gray)
+                                    .opacity(10)
+                            }
+                           
+                        }
+                        .padding()
                     
+                    Divider()
                     
                 }
                 
+                
             }
         }
+        
+        
     }
     
     

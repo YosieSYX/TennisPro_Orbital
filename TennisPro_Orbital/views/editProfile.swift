@@ -8,6 +8,7 @@
 import SwiftUI
 import PhotosUI
 import AVKit
+import Kingfisher
 
 struct editProfile: View {
     @State var userName:String
@@ -58,12 +59,12 @@ struct editProfile: View {
                             .frame(width:150,height: 150)
                             .overlay(Circle().stroke(Color.black,lineWidth: 2))
                     }else{
-                        Image(systemName: "person.fill")
+                        KFImage(URL(string: ImageUrl))
                             .resizable()
                             .scaledToFill()
                             .frame(width:150,height: 150)
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.black,lineWidth: 2))
+                            .overlay(Circle().stroke(Color.black,lineWidth: 1))
                     }
                    
                         Spacer()

@@ -11,5 +11,6 @@ import FirebaseFirestoreSwift
 struct FetchVideo: Identifiable,Codable{
     @DocumentID var id: String?
     let videoUrl: String
-   
+    let userId:String
+    var user:FetchUser?
 }

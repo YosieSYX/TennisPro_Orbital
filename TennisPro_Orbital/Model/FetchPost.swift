@@ -9,10 +9,9 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct FetchPost: Identifiable,Codable{
-    let videoId: String
+    @DocumentID var id: String?
     let videoUrl: String
-    var id:String{
-        return NSUUID().uuidString
-    }
+    let userId:String
+    
 }
 

@@ -22,7 +22,7 @@ struct menu: View {
     var body: some View {
         ZStack{
             backgroundGradient
-            VStack(spacing:50){
+            VStack(spacing:15){
                 Image("Tennisbackground")
                     .resizable()
                     .scaledToFit()
@@ -57,6 +57,23 @@ struct menu: View {
                         currentShowingView="forum"
                     }, label: {
                         Text("Forum")
+                            .font(.system(size: 20))
+                    })
+                    .frame(width: 200,height: 20)
+                    .padding()
+                    .background(greener)
+                    .cornerRadius(10.0)
+                    .foregroundColor(.white)
+                }
+                HStack{
+                    Image(systemName: "person.fill") // Replace with your image name
+                        .resizable()
+                        .frame(width: 80, height: 80) // Adjust the size as needed
+                        .foregroundColor(.yellow)
+                    Button(action: {
+                        currentShowingView="profile"
+                    }, label: {
+                        Text("Profile")
                             .font(.system(size: 20))
                     })
                     .frame(width: 200,height: 20)

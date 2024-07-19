@@ -14,6 +14,7 @@ import Firebase
 
 class ViewModelForum: ObservableObject{
     @Published var videos = [FetchVideo]()
+    let userService = UserService()
     @Published var selectedPost: PhotosPickerItem?{
         didSet{
             Task{try await uploadVideo()}
@@ -46,13 +47,11 @@ class ViewModelForum: ObservableObject{
       
         // Update one field, creating the document if it does not exist.
         print("here4")
-      let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl])
+        let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl,"userId":userId])
         print("here2")
         try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").document().setData(["videoId":ref.documentID,"videoUrl": postVideourl])
         
         print("here3")
-        
-        
         
         print("successfully uploaded")
         
@@ -74,6 +73,13 @@ class ViewModelForum: ObservableObject{
             print("This is video id fetched:\(video.id ?? "nil")")
         }
         print("DEBUG: finish fetching videos")
+        
+        for i in 0..<videos.count{
+            let userId = videos[i].userId
+            userService.fetchUser(WithUid: userId) { user in
+                self.videos[i].user = user
+            }
+        }
     }
     
 }

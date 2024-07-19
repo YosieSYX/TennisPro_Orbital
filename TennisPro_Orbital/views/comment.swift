@@ -11,7 +11,7 @@ import AVKit
 import Kingfisher
 
 struct comment: View {
-    @State private var isLiked = false
+   
     @State private var isTextfieldVisible = false
     
     @StateObject var viewModel : ForumComment
@@ -42,7 +42,7 @@ struct comment: View {
                                     .aspectRatio(contentMode: .fill)
                                     .clipShape(Circle())
                                     .frame(width:40, height: 40)
-                                    .overlay(Circle().stroke(Color.black,lineWidth: 2))
+                                    .overlay(Circle().stroke(Color.black,lineWidth: 1))
                             }else{
                                 Image(systemName: "person")
                                     .frame(width:10,height:10)
@@ -51,6 +51,7 @@ struct comment: View {
                             Text(comment.user?.user_name ?? "user123456")
                             Spacer()
                         }
+                        .padding()
 
                         Text(comment.comment)
                     }
@@ -63,17 +64,20 @@ struct comment: View {
             
             HStack{
                 Spacer()
-                Button(action: {
-                    isLiked.toggle()
-                }, label: {
-                    Image(systemName: isLiked ? "heart.fill" : "heart")
-                    
-                })
+                
                
                 Button(action: {
                     isTextfieldVisible = true
                 }, label: {
-                    Image(systemName: "text.bubble")
+                    HStack{
+                        Image(systemName: "text.bubble")
+                            .foregroundColor(.gray)
+                            .opacity(5)
+                        Text("\(viewModel.comments.count)")
+                            .foregroundColor(.gray)
+                            .opacity(5)
+                    }
+                    .padding()
                 })
                 .sheet(isPresented: $isTextfieldVisible, content: {
                     textBox(isTextfieldVisible: $isTextfieldVisible, id:id )
