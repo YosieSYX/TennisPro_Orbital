@@ -90,7 +90,7 @@ struct menu: View {
                     Button(action: {
                         openURL(URL(string: "http://www.tennisnews.com/category/tennis-news/")!)
                     }, label: {
-                        Text("Tennis News")
+                        Text("Tennis Trivia")
                             .font(.system(size: 20))
                     })
                     .frame(width: 200,height: 20)

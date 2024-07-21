@@ -41,11 +41,11 @@ struct AuthView: View {
                 else if(currentShowingView=="hitting"){
                     HittingView(currentShowingView: $currentShowingView)
                 }
-                else if(currentShowingView=="backswingAnalysis"){
-                    BackswingResultsView(currentShowingView: $currentShowingView)
+                else if(currentShowingView=="TriviaView"){
+                    TriviaView(currentShowingView: $currentShowingView)
                 }
-                else if(currentShowingView=="hittingAnalysis"){
-                    HittingResultsView(currentShowingView: $currentShowingView)
+                else if(currentShowingView=="QuizView"){
+                    QuizView(currentShowingView: $currentShowingView)
                 }
             }
         }

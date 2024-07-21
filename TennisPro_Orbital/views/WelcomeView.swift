@@ -13,12 +13,14 @@ struct WelcomeView: View {
     
     var body: some View {
         NavigationStack{
+            ZStack{
+                backgroundGradient
                 VStack(alignment: .center){
                     Group{
                         Text("Welcome to TennisPro!").font(.system(size: 45, weight: .light, design: .serif))
                             .italic()
                             .frame(alignment:.center)
-                        Image("tennis")
+                        Image("tennis 1")
                             .resizable()
                             .scaledToFit()
                             .frame( width:150, height: 100)
@@ -42,8 +44,10 @@ struct WelcomeView: View {
                         })
                     }.frame(maxHeight: .infinity, alignment: .bottom)
                 }
-               
+                
             }
+            .ignoresSafeArea()
+        }
     }
 }
 
