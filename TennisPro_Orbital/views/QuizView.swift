@@ -7,6 +7,8 @@
 
 import SwiftUI
 import FirebaseStorage
+var score = 0
+var num_questions = 0
 
 struct QuizView: View {
     @Binding var currentShowingView: String
@@ -14,6 +16,12 @@ struct QuizView: View {
     @State private var currentQuestionIndex = 0
     @State private var showCorrectMessage = false
     @State private var showIncorrectMessage = false
+
+    var buttonColor = LinearGradient(
+        colors: [.blue, .green],
+        startPoint: .leading,
+        endPoint: .trailing
+    )
     
     var body: some View {
         NavigationStack{
@@ -31,7 +39,7 @@ struct QuizView: View {
                             }) {
                                 Text(answer)
                                     .padding()
-                                    .background(Color.gray)
+                                    .background(buttonColor)
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                                     .padding(.bottom, 5)
@@ -39,16 +47,31 @@ struct QuizView: View {
                         }
                         if showCorrectMessage {
                             Text("Correct!")
-                                .font(.headline)
+                                .font(.system(size: 20, weight: .light, design: .serif))
                                 .foregroundColor(.green)
                                 .transition(.opacity)
                         }
                         else if showIncorrectMessage {
                                             Text("Incorrect!")
-                                                .font(.headline)
+                                                .font(.system(size: 20, weight: .light, design: .serif))
                                                 .foregroundColor(.red)
                                                 .transition(.opacity)
                                         }
+                        Spacer()
+                        Button(action: {
+                            currentShowingView="endQuizView"
+                        }, label: {
+                            Text("Exit Quiz")
+                                .font(.system(size: 20))
+                        })
+                        .frame(width: 200,height: 20)
+                        .padding()
+                        .background(greener)
+                        .cornerRadius(10.0)
+                        .foregroundColor(.white)
+                        
+                        
+                        
                     } else {
                         Text("Loading questions...")
                             .onAppear {
@@ -58,30 +81,22 @@ struct QuizView: View {
                     
                 }
             }
-        .toolbar {
-            Button(action: {
-                currentShowingView = "welcome"
-            }, label: {
-                Text("Log out")
-            })
-            Button(action: {
-                currentShowingView = "menu"
-            }, label: {
-                Text("Menu")
-            })
-        }
+        
     }
         .ignoresSafeArea()
 }
     func checkAnswer(_ answer: String) {
             if answer == questions[currentQuestionIndex].correctAnswer {
                 showCorrectMessage = true
+                score += 1
+                num_questions += 1
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     showCorrectMessage = false
                     loadNextQuestion()
                 }
             } else {
                 showIncorrectMessage = true
+                num_questions += 1
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     showIncorrectMessage = false
                     loadNextQuestion()

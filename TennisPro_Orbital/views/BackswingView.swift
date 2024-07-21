@@ -18,7 +18,8 @@ struct BackswingView: View {
     @State private var detection = Detection()
     @State private var uploadedImage: UIImage?
     @State private var poseResults: [Pose] = []
-    @State private var analysisText: String = ""
+    @State private var analysisText1: String = ""
+    @State private var analysisText2: String = ""
     @StateObject var viewModel = ContentViewModel()
     var body: some View {
         NavigationStack{
@@ -32,18 +33,25 @@ struct BackswingView: View {
                             .frame(width: 200, height: 200)
                             .padding()
                         
-                        Text(analysisText)
+                        Text(analysisText1)
                             .padding()
                         
                         
                     }
                     else{
-                        Text("Backswing Analysis").font(.system(size: 45, weight: .light, design: .serif)).frame(alignment:.center)
-                        Text("Please take a photo of your forehand backswing position.").font(.system(size: 20, weight: .light, design: .serif))
+                        LinearGradient(
+                            colors: [.red, .blue, .green, .yellow],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .mask(
+                            Text("Backswing Analysis").font(.system(size: 45, weight: .light, design: .serif)).frame(alignment:.center)
+                        )
+                        Text("Please take a photo of your forehand backswing position.").font(.system(size: 17, weight: .light, design: .serif))
                             .italic().frame(alignment:.center)
-                        Text("Photo should be taken from the right side, where your body is facing.").font(.system(size: 20, weight: .light, design: .serif))
+                        Text("Photo should be taken from the right side, where your body is facing.").font(.system(size: 17, weight: .light, design: .serif))
                             .italic()
-                        Text("An example is shown below.").font(.system(size: 20, weight: .light, design: .serif))
+                        Text("An example is shown below.").font(.system(size: 17, weight: .light, design: .serif))
                             .italic().frame(alignment:.center)
                         Image("Djokovic")
                             .resizable()
@@ -130,10 +138,11 @@ struct BackswingView: View {
                 detection.getResults(from: image) { poseResults in
                     if let poseResults = poseResults {
                         self.poseResults = poseResults
-                        self.analysisText = analysisStatement(for: poseResults)
+                        self.analysisText1 = analysisStatement1(for: poseResults)
+                        self.analysisText2 = analysisStatement2(for: poseResults)
                     } else {
                         self.poseResults = []
-                        self.analysisText = "No poses detected or error occurred."
+                        self.analysisText1 = "No poses detected or error occurred."
                         print("Image file not processed")
                     }
                 }
@@ -142,20 +151,39 @@ struct BackswingView: View {
             }
         }
         
-        private func analysisStatement(for poses: [Pose]) -> String {
-            if poses.isEmpty {
-                return "No poses detected."
-            } else {
-                for pose in poses{
-                    let rightElbow = pose.landmark(ofType: .rightElbow)
-                    let rightWrist = pose.landmark(ofType: .rightWrist)
-                    if(rightElbow.position.y - rightWrist.position.y < 5)
-                    {
-                        return "Stretch out your right arm a bit more!"
-                    }
+    private func analysisStatement1(for poses: [Pose]) -> String {
+        if poses.isEmpty {
+            return "No poses detected."
+        } else {
+            for pose in poses{
+                let rightElbow = pose.landmark(ofType: .rightElbow)
+                let rightWrist = pose.landmark(ofType: .rightWrist)
+                if(rightElbow.position.y - rightWrist.position.y < 5)
+                {
+                    return "It would be good to stretch out your right arm a bit more."
                 }
-                return "Your position looks good!"
             }
+            return "Your right arm position looks good!"
+        }
+    }
+private func analysisStatement2(for poses: [Pose]) -> String {
+    if poses.isEmpty {
+        return "No poses detected."
+    } else {
+        for pose in poses{
+            let rightShoulder = pose.landmark(ofType: .rightShoulder)
+            let leftShoulder = pose.landmark(ofType: .leftShoulder)
+            let rightAnkle = pose.landmark(ofType: .rightAnkle)
+            let leftAnkle = pose.landmark(ofType: .leftAnkle)
+            let shoulderLength = (pow(rightShoulder.position.x - leftShoulder.position.x,2) + pow(rightShoulder.position.y - leftShoulder.position.y,2)).squareRoot()
+            let AnkleDistance = (pow(leftAnkle.position.x - rightAnkle.position.x,2) + pow(leftAnkle.position.y - rightAnkle.position.y,2)).squareRoot()
+            if(AnkleDistance < shoulderLength)
+            {
+                return "It would be good to split your feet a bit more."
+            }
+        }
+        return "The distance between your feet looks good!"
+    }
         }
     
 }

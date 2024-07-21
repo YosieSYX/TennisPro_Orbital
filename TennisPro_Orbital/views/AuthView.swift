@@ -47,6 +47,9 @@ struct AuthView: View {
                 else if(currentShowingView=="QuizView"){
                     QuizView(currentShowingView: $currentShowingView)
                 }
+                else if(currentShowingView=="endQuizView"){
+                    endQuizView(currentShowingView: $currentShowingView,score:score, num_questions: num_questions)
+                }
             }
         }
     }

@@ -47,8 +47,11 @@ struct HittingView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width:300, height: 200)
+                    Spacer()
+                    Text("Upload photo here for analysis")
                     PhotosPicker(selection: $viewModel.selectedItem, matching: .images) {
-                        Text("Upload photo here for analysis")
+                        Image(systemName: "plus.circle")
+                            .frame(width: 200,height: 100)
                     }
                     .onChange(of: viewModel.selectedItem) { newItem in
                         Task {

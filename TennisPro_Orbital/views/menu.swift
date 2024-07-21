@@ -66,14 +66,14 @@ struct menu: View {
                     .foregroundColor(.white)
                 }
                 HStack{
-                    Image(systemName: "person.fill") // Replace with your image name
+                    Image("news") // Replace with your image name
                         .resizable()
                         .frame(width: 80, height: 80) // Adjust the size as needed
                         .foregroundColor(.yellow)
                     Button(action: {
-                        currentShowingView="profile"
+                        currentShowingView = "TriviaView"
                     }, label: {
-                        Text("Profile")
+                        Text("Trivia")
                             .font(.system(size: 20))
                     })
                     .frame(width: 200,height: 20)
@@ -83,14 +83,14 @@ struct menu: View {
                     .foregroundColor(.white)
                 }
                 HStack{
-                    Image("news") // Replace with your image name
+                    Image(systemName: "person.fill") // Replace with your image name
                         .resizable()
-                        .frame(width: 80, height: 80) // Adjust the size as needed
+                        .frame(width: 80, height: 60) // Adjust the size as needed
                         .foregroundColor(.yellow)
                     Button(action: {
-                        openURL(URL(string: "http://www.tennisnews.com/category/tennis-news/")!)
+                        currentShowingView="profile"
                     }, label: {
-                        Text("Tennis Trivia")
+                        Text("Profile")
                             .font(.system(size: 20))
                     })
                     .frame(width: 200,height: 20)

@@ -26,6 +26,9 @@
 		487C2DEB2C4CA1ED0012A33A /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEA2C4CA1ED0012A33A /* TriviaView.swift */; };
 		487C2DEC2C4CA1ED0012A33A /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEA2C4CA1ED0012A33A /* TriviaView.swift */; };
 		487C2DED2C4CA1ED0012A33A /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEA2C4CA1ED0012A33A /* TriviaView.swift */; };
+		487C2DEF2C4CBFB40012A33A /* endQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEE2C4CBFB40012A33A /* endQuizView.swift */; };
+		487C2DF02C4CBFB40012A33A /* endQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEE2C4CBFB40012A33A /* endQuizView.swift */; };
+		487C2DF12C4CBFB40012A33A /* endQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C2DEE2C4CBFB40012A33A /* endQuizView.swift */; };
 		488E5A512C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
 		488E5A522C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
 		488E5A532C3FBA1A00C51F27 /* HittingResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */; };
@@ -125,6 +128,7 @@
 		4870B4322C31AB8F002684CF /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
 		487C2DE62C4CA1CB0012A33A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		487C2DEA2C4CA1ED0012A33A /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		487C2DEE2C4CBFB40012A33A /* endQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endQuizView.swift; sourceTree = "<group>"; };
 		488E5A502C3FBA1A00C51F27 /* HittingResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HittingResultsView.swift; sourceTree = "<group>"; };
 		48BB26C32C2D03B600FB7260 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
 		48BB26C72C2D062000FB7260 /* BackswingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackswingView.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 				48BB26D72C2E48B000FB7260 /* BackswingResultsView.swift */,
 				487C2DE62C4CA1CB0012A33A /* QuizView.swift */,
 				487C2DEA2C4CA1ED0012A33A /* TriviaView.swift */,
+				487C2DEE2C4CBFB40012A33A /* endQuizView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 				DE89762E2C3E3A5C0001FA53 /* userProfile.swift in Sources */,
 				DE8976302C3E46500001FA53 /* ProfileFilterViewModel.swift in Sources */,
 				DEAD78342C1C2A15009CD325 /* forum.swift in Sources */,
+				487C2DEF2C4CBFB40012A33A /* endQuizView.swift in Sources */,
 				DE217C742C303320009051DD /* comment.swift in Sources */,
 				4870B4332C31AB8F002684CF /* Detection.swift in Sources */,
 				DE0E82CE2C05BF2F0009522F /* mainPage.swift in Sources */,
@@ -768,6 +774,7 @@
 				4867048F2C00357400332DE2 /* TennisPro_OrbitalTests.swift in Sources */,
 				48BB26CD2C2D063300FB7260 /* HittingView.swift in Sources */,
 				487C2DEC2C4CA1ED0012A33A /* TriviaView.swift in Sources */,
+				487C2DF02C4CBFB40012A33A /* endQuizView.swift in Sources */,
 				48BB26C92C2D062000FB7260 /* BackswingView.swift in Sources */,
 				487C2DE82C4CA1CC0012A33A /* QuizView.swift in Sources */,
 				48BB26D12C2E38F500FB7260 /* PhotoViewModel.swift in Sources */,
@@ -785,6 +792,7 @@
 				487C2DE92C4CA1CC0012A33A /* QuizView.swift in Sources */,
 				48BB26CE2C2D063300FB7260 /* HittingView.swift in Sources */,
 				48BB26DA2C2E48B000FB7260 /* BackswingResultsView.swift in Sources */,
+				487C2DF12C4CBFB40012A33A /* endQuizView.swift in Sources */,
 				48BB26D62C2E3FE300FB7260 /* PhotoUpload.swift in Sources */,
 				48BB26C62C2D03B600FB7260 /* AnalysisView.swift in Sources */,
 				48BB26CA2C2D062000FB7260 /* BackswingView.swift in Sources */,
