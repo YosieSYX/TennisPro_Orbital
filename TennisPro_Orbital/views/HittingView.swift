@@ -21,63 +21,74 @@ struct HittingView: View {
     @StateObject var viewModel = ContentViewModel()
     var body: some View {
         NavigationStack{
-            VStack{
-                if let image = uploadedImage{
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 200, height: 200)
-                        .padding()
-                    
-                    Text(analysisText1)
-                    Text(analysisText2)
-                        .padding()
-
-                    
-                }
-                else{
-                    Text("Hitting Analysis").font(.system(size: 45, weight: .light, design: .serif)).frame(alignment:.center)
-                    Text("Please take a photo of your forehand hitting position.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic().frame(alignment:.center)
-                    Text("Photo should be taken from the front of you.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic()
-                    Text("An example is shown below.").font(.system(size: 20, weight: .light, design: .serif))
-                        .italic().frame(alignment:.center)
-                    Image("roger forehand")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:300, height: 200)
-                    Spacer()
-                    Text("Upload photo here for analysis")
-                    PhotosPicker(selection: $viewModel.selectedItem, matching: .images) {
-                        Image(systemName: "plus.circle")
-                            .frame(width: 200,height: 100)
+            ZStack{
+                backgroundGradient
+                VStack{
+                    if let image = uploadedImage{
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                            .padding()
+                        
+                        Text(analysisText1)
+                        Text(analysisText2)
+                            .padding()
+                        
+                        
                     }
-                    .onChange(of: viewModel.selectedItem) { newItem in
-                        Task {
-                            if let newItem = newItem {
-                                if let data = try? await newItem.loadTransferable(type: Data.self),
-                                   let image = UIImage(data: data) {
-                                    uploadedImage = image
-                                    // Process image and navigate to menu
-                                    processImage()
+                    else{
+                        LinearGradient(
+                            colors: [.red, .blue, .green, .yellow],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .mask(
+                            Text("Hitting Analysis").font(.system(size: 45, weight: .light, design: .serif)).frame(alignment:.center)
+                        )
+                        Text("Please take a photo of your forehand hitting position.").font(.system(size: 20, weight: .light, design: .serif))
+                            .italic().frame(alignment:.center)
+                        Text("Photo should be taken from the front of you.").font(.system(size: 20, weight: .light, design: .serif))
+                            .italic()
+                        Text("An example is shown below.").font(.system(size: 20, weight: .light, design: .serif))
+                            .italic().frame(alignment:.center)
+                        Image("roger forehand")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width:300, height: 200)
+                        Spacer()
+                        Text("Upload photo here for analysis")
+                        PhotosPicker(selection: $viewModel.selectedItem, matching: .images) {
+                            Image(systemName: "plus.circle")
+                                .frame(width: 200,height: 100)
+                        }
+                        .onChange(of: viewModel.selectedItem) { newItem in
+                            Task {
+                                if let newItem = newItem {
+                                    if let data = try? await newItem.loadTransferable(type: Data.self),
+                                       let image = UIImage(data: data) {
+                                        uploadedImage = image
+                                        // Process image and navigate to menu
+                                        processImage()
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            .toolbar {
-                Button(action: {
-                    currentShowingView = "welcome"
-                }, label: {
-                    Text("Log out")
-                })
-                Button(action: {
-                    currentShowingView = "menu"
-                }, label: {
-                    Text("Menu")
-                })
+                .toolbar {
+                    Button(action: {
+                        currentShowingView = "welcome"
+                    }, label: {
+                        Text("Log out")
+                    })
+                    Button(action: {
+                        currentShowingView = "menu"
+                    }, label: {
+                        Text("Menu")
+                    })
+                }
+                .ignoresSafeArea()
             }
         }
     }

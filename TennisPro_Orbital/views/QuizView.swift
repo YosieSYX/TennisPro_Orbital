@@ -29,6 +29,10 @@ struct QuizView: View {
                 backgroundGradient
                 VStack {
                     if !questions.isEmpty {
+                        Image("quiz")
+                            .resizable()
+                            .scaledToFit()
+                            .frame( width:300, height: 200)
                         Text(questions[currentQuestionIndex].question)
                             .font(.title)
                             .padding()
@@ -108,9 +112,7 @@ struct QuizView: View {
             if currentQuestionIndex < questions.count - 1 {
                 currentQuestionIndex += 1
             } else {
-                // Show final score or reset the quiz
-                // For now, reset the quiz
-                currentQuestionIndex = 0
+                currentShowingView="endQuizView"
             }
         }
         

@@ -66,9 +66,9 @@ struct menu: View {
                     .foregroundColor(.white)
                 }
                 HStack{
-                    Image("news") // Replace with your image name
+                    Image("trivia") // Replace with your image name
                         .resizable()
-                        .frame(width: 80, height: 80) // Adjust the size as needed
+                        .frame(width: 80, height: 60) // Adjust the size as needed
                         .foregroundColor(.yellow)
                     Button(action: {
                         currentShowingView = "TriviaView"
