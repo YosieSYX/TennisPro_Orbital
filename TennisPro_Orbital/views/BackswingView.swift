@@ -35,6 +35,8 @@ struct BackswingView: View {
                         
                         Text(analysisText1)
                             .padding()
+                        Text(analysisText2)
+                            .padding()
                         
                         
                     }
@@ -133,7 +135,6 @@ struct BackswingView: View {
             return data
         }
         private func processImage() {
-            fetchPhoto()
             if let image = uploadedImage {
                 detection.getResults(from: image) { poseResults in
                     if let poseResults = poseResults {

@@ -179,11 +179,11 @@ struct HittingView: View {
                 let rightShoulder = pose.landmark(ofType: .rightShoulder)
                 if((rightElbow.position.x - rightWrist.position.x) / (rightShoulder.position.x - rightElbow.position.x) < 1.1)
                 {
-                    return "It would be good to get closer to the ball"
+                    return "It would be good to decrease the distance between right elbow and your body."
                 }
                 else if((rightElbow.position.x - rightWrist.position.x) / (rightShoulder.position.x - rightElbow.position.x) > 1.3)
                 {
-                    return "It would be good to be farther to the ball."
+                    return "It would be good to increase the distance between right elbow and your body."
                 }
             }
             return "Your elbow position looks good!"
