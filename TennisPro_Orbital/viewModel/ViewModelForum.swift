@@ -14,8 +14,9 @@ import Firebase
 
 class ViewModelForum: ObservableObject{
     @Published var videos = [FetchVideo]()
+    @Published var testId:String = ""
     let userService = UserService()
-    @Published var selectedPost: PhotosPickerItem?{
+    @Published var selectedPost: PhotoPickerProtocol?{
         didSet{
             Task{try await uploadVideo()}
         }
@@ -44,14 +45,11 @@ class ViewModelForum: ObservableObject{
        
         let userId = Auth.auth().currentUser?.uid
         let userIdString = userId?.description ?? ""
-      
+        let filename = NSUUID().uuidString
         // Update one field, creating the document if it does not exist.
-        print("here4")
-        let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl,"userId":userId])
-        print("here2")
-        try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").document().setData(["videoId":ref.documentID,"videoUrl": postVideourl])
+       
+        let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl,"userId":userId,"testId":testId])
         
-        print("here3")
         
         print("successfully uploaded")
         

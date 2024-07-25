@@ -79,9 +79,9 @@ struct forum: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     
-                    PhotosPicker(selection: $viewModel.selectedPost, matching: .any(of: [.videos, .not(.images)])){
-                        Image(systemName: "plus")
-                    }
+                  //  PhotosPicker(selection: $viewModel.selectedPost, matching: .any(of: [.videos, //.not(.images)])){
+                      //  Image(systemName: "plus")
+                 //   }
                     
                 }
                 ToolbarItem(placement:.navigationBarLeading) {

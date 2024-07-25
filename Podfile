@@ -7,16 +7,17 @@ target 'TennisPro_Orbital' do
 
   # Pods for TennisPro_Orbital
   pod 'GoogleMLKit/PoseDetection', '3.2.0'
-
+  #pod 'abseil'
+ 
   target 'TennisPro_OrbitalTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'GoogleMLKit/PoseDetection', '3.2.0'
+   
   end
 
   target 'TennisPro_OrbitalUITests' do
     # Pods for testing
-    pod 'GoogleMLKit/PoseDetection', '3.2.0'
+    #pod 'GoogleMLKit/PoseDetection', '3.2.0'
   end
 
 end

@@ -10,10 +10,10 @@ import FirebaseAuth
 
 struct loginPage: View {
     @Binding var currentShowingView: String
-    @State private var email:String=""
-    @State private var password:String=""
-    @State private var errorMessage: String=""
-    @State private var showAlert:Bool = false
+    @State  var email:String=""
+    @State  var password:String=""
+    @State  var errorMessage: String=""
+    @State  var showAlert:Bool = false
     var body: some View {
         VStack{
             Text("TennisPro")

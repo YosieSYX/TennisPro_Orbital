@@ -12,11 +12,11 @@ import FirebaseAuth
 
 struct signUp: View {
     @Binding var currentShowingView: String
-    @State private var email:String=""
-    @State private var password:String=""
-    @State private var name: String=""
-    @State private var showAlert: Bool=false
-    @State private var errorMessage: String = ""
+    @State  var email:String=""
+    @State var password:String=""
+    @State  var name: String=""
+    @State var showAlert: Bool=false
+    @State var errorMessage: String = ""
     var body: some View {
        
         VStack(spacing:30){

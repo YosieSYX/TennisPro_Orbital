@@ -153,8 +153,8 @@ class PhotoViewModel: ObservableObject {
 import Foundation
 import SwiftUI
 import PhotosUI
-import FirebaseFirestore
 import FirebaseAuth
+import FirebaseFirestore
 
 class PhotoViewModel: ObservableObject{
     
