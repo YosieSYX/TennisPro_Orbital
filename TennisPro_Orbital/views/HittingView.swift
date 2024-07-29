@@ -79,11 +79,13 @@ struct HittingView: View {
                 .toolbar {
                     Button(action: {
                         currentShowingView = "welcome"
+                        signOut()
                     }, label: {
                         Text("Log out")
                     })
                     Button(action: {
                         currentShowingView = "menu"
+                        
                     }, label: {
                         Text("Menu")
                     })
@@ -93,7 +95,13 @@ struct HittingView: View {
         }
     }
 
-                
+    func signOut(){
+        do{
+            try Auth.auth().signOut()
+        }catch let signOutError as NSError{
+            print("Error signing out:%@", signOutError)
+        }
+    }
             
     private func fetchPhoto() {
         guard let userId = Auth.auth().currentUser?.uid else {

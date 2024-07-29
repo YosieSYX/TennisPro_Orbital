@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master.swiftconstvalues",
+    "dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master.d",
+    "diagnostics" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master.dia",
+    "emit-module-dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master-emit-module.dia",
+    "swift-dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift-master.swiftdeps"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabaseSwift/Sources/FirebaseDatabaseSwift.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseDatabaseSwift.build/Objects-normal/arm64/FirebaseDatabaseSwift.o"
+  }
+}

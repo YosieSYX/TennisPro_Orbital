@@ -49,7 +49,7 @@ class ViewModelForum: ObservableObject{
         print("here4")
         let  ref = try await Firestore.firestore().collection("forum").addDocument(data: ["videoUrl":postVideourl,"userId":userId])
         print("here2")
-        try await Firestore.firestore().collection("users_Profile").document(userIdString).collection("forumPost").document().setData(["videoId":ref.documentID,"videoUrl": postVideourl])
+    
         
         print("here3")
         

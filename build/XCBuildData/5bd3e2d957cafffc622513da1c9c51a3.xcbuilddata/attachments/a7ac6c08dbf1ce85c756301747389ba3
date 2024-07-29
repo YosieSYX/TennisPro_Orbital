@@ -1,0 +1,4 @@
+module GoogleUtilities_MethodSwizzler {
+umbrella "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public"
+export *
+}

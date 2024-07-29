@@ -55,6 +55,7 @@ struct comment: View {
 
                         Text(comment.comment)
                     }
+                    .padding()
                     
                     Divider()
                         .frame(height: 5)

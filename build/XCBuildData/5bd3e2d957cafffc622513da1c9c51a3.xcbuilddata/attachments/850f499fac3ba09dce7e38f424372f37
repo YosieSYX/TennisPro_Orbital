@@ -1,0 +1,4 @@
+module GoogleDataTransport {
+umbrella header "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GoogleDataTransport.h"
+export *
+}

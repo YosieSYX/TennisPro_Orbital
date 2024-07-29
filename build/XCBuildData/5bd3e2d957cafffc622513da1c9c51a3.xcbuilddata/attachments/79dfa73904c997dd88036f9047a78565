@@ -1,0 +1,4 @@
+module GoogleAppMeasurementTarget {
+umbrella "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/GoogleAppMeasurement/GoogleAppMeasurementWrapper/include"
+export *
+}

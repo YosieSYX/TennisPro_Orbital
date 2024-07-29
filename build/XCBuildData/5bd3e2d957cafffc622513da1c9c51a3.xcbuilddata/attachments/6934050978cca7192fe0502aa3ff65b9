@@ -1,0 +1,4 @@
+module GTMSessionFetcherCore {
+umbrella "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/gtm-session-fetcher/Sources/Core/Public"
+export *
+}

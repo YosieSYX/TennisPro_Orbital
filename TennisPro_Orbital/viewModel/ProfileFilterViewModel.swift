@@ -26,14 +26,20 @@ enum ProfileFilterViewModel:Int,CaseIterable{
 class ForumPost:ObservableObject{
     @Published var posts = [FetchPost]()
     @Published var document = FetchUser()
-
+    @Published var isLoading:Bool = true
     
     init(){
         Task{
             do{
+                isLoading = true
                 try await fetchUser()
-                print("posts successfully fetched")
+                print("users successfully fetched")
                 try await fetchPost()
+                print("post successfully fetched")
+              
+                await MainActor.run {
+                self.isLoading = false
+                                }
                 
             }catch{
                 print("Failed to fetch posts:\(error.localizedDescription)")
@@ -48,19 +54,20 @@ class ForumPost:ObservableObject{
         let userIdString = userId?.description ?? ""
         let ref = Firestore.firestore().collection("users_Profile").document(userIdString)
         
-        ref.getDocument{ [weak self] (document,error) in
-            if let document = document, document.exists{
+        let snapshot = try await ref.getDocument()
+        print("reach here fetchUser function")
+        if let snapshotDat = snapshot.data(){
                 do{
-                    self?.document = try document.data(as: FetchUser.self) 
+                    self.document = try snapshot.data(as: FetchUser.self)
                     
                 }catch{
                     print("DEBUG:error when mapping:\(error.localizedDescription)")
                 }
             }else{
                 print("user not initialize his profile ")
-                self?.document = FetchUser()
+                self.document = FetchUser()
             }
-        }
+        
         
     }
 
@@ -87,7 +94,7 @@ class ForumPost:ObservableObject{
                 {try?$0.data(as: FetchPost.self)
             })
         }
-        print("here2")
+        print("here4")
         
     }
 }

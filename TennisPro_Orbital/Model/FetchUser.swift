@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct FetchUser:Identifiable,Codable{
-    var user_name:String = "Default user name"
+    var user_name:String = "User12345"
     var introduction:String = "This user doesn't have an introduction"
     var imageUrl:String = "default"
     

@@ -9,12 +9,14 @@ import SwiftUI
 import PhotosUI
 import AVKit
 import Kingfisher
+import FirebaseAuth
 
 struct editProfile: View {
     @State var userName:String
     @State var introduction:String 
     @State var ImageUrl:String
     @State private var selectedImage:UIImage?
+    @State private var originalImage:UIImage?
     @State private var profileImage:Image?
     @State private var isPhotoPickerPresented = false
     @StateObject var viewModel = EditProfileViewModel()
@@ -59,12 +61,26 @@ struct editProfile: View {
                             .frame(width:150,height: 150)
                             .overlay(Circle().stroke(Color.black,lineWidth: 2))
                     }else{
-                        KFImage(URL(string: ImageUrl))
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width:150,height: 150)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.black,lineWidth: 1))
+                        if ImageUrl != "default"{
+                            KFImage(URL(string: ImageUrl))
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width:150,height: 150)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.black,lineWidth: 1))
+                                .onAppear {
+                                    convertKFImageToUIImage(urlString: ImageUrl) { image in
+                                        self.originalImage = image
+                                    }
+                                }
+                        }else{
+                            Image(systemName: "person.fill")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width:150,height: 150)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.black,lineWidth: 1))
+                        }
                     }
                    
                         Spacer()
@@ -78,20 +94,21 @@ struct editProfile: View {
             }
             Spacer()
             Spacer()
-            if let selectedImage = selectedImage {
-                HStack{
-                    Spacer()
+            
+            if selectedImage != nil || originalImage != nil {
                     Button(action: {
-                        viewModel.uploadProfile(selectedImage, user_name: userName, introduction: introduction)
+                        if let imageToUpload = selectedImage ?? originalImage {
+                            let uid = Auth.auth().currentUser?.uid
+                            let userId = uid?.description ?? ""
+                            viewModel.uploadProfile(userId: userId, imageToUpload, user_name: userName, introduction: introduction)
+                        }
                     }, label: {
                         Text("Finish")
                             .foregroundStyle(.white)
                     })
-                    .frame(width:400, height: 20)
-                    .background(Color(.black))
-                    Spacer()
+                    .frame(width: 400, height: 20)
+                    .background(Color.black)
                 }
-            }
          
         }
            
@@ -99,6 +116,21 @@ struct editProfile: View {
     func loadImage(){
         guard let selectedImage = selectedImage else{return}
         profileImage = Image(uiImage: selectedImage)
+    }
+    func convertKFImageToUIImage(urlString: String, completion: @escaping (UIImage?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        KingfisherManager.shared.retrieveImage(with: url) { result in
+            switch result {
+            case .success(let value):
+                completion(value.image)
+            case .failure(_):
+                completion(nil)
+            }
+        }
     }
 }
 

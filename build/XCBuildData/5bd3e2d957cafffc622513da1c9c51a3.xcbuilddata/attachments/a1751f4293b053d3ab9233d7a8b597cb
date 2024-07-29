@@ -1,0 +1,4 @@
+module abslWrapper {
+umbrella "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/abseil-cpp-binary/absl-Wrapper/include"
+export *
+}

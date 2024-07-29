@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
 struct endQuizView: View {
     @Binding var currentShowingView: String
     let score: Int
@@ -37,6 +37,7 @@ struct endQuizView: View {
                 .toolbar {
                     Button(action: {
                         currentShowingView = "welcome"
+                        signOut()
                     }, label: {
                         Text("Log out")
                     })
@@ -51,6 +52,14 @@ struct endQuizView: View {
             
         }
     }
+    func signOut(){
+        do{
+            try Auth.auth().signOut()
+        }catch let signOutError as NSError{
+            print("Error signing out:%@", signOutError)
+        }
+    }
+
 }
 
 

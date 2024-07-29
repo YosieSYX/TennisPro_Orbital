@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 let NewPink = UIColor(named: "Pink") ?? UIColor.pink
 let green1 = UIColor(named: "green") ?? UIColor.green
 let green2 = UIColor(named: "greener") ?? UIColor.green
@@ -22,7 +23,7 @@ struct menu: View {
     var body: some View {
         ZStack{
             backgroundGradient
-            VStack(spacing:15){
+            VStack(spacing:10){
                 Image("Tennisbackground")
                     .resizable()
                     .scaledToFit()
@@ -34,7 +35,7 @@ struct menu: View {
         HStack{
                     Image("analysis") // Replace with your image name
                         .resizable()
-                        .frame(width: 80, height: 80) // Adjust the size as needed
+                        .frame(width: 60, height: 60) // Adjust the size as needed
                         .foregroundColor(.yellow)
                     Button(action: {
                         currentShowingView="analysis"
@@ -99,11 +100,39 @@ struct menu: View {
                     .cornerRadius(10.0)
                     .foregroundColor(.white)
                 }
+                HStack{
+                    Image(systemName: "person.fill") // Replace with your image name
+                        .resizable()
+                        .frame(width: 80, height: 60) // Adjust the size as needed
+                        .foregroundColor(.yellow)
+                    Button(action: {
+                       
+                        signOut()
+                        currentShowingView="welcome"
+                        
+                    }, label: {
+                        Text("Sign out")
+                            .font(.system(size: 20))
+                    })
+                    .frame(width: 200,height: 20)
+                    .padding()
+                    .background(greener)
+                    .cornerRadius(10.0)
+                    .foregroundColor(.white)
+                }
 
             }
           
         }
         .ignoresSafeArea()
+    }
+    
+    func signOut(){
+        do{
+            try Auth.auth().signOut()
+        }catch let signOutError as NSError{
+            print("Error signing out:%@", signOutError)
+        }
     }
 
 }

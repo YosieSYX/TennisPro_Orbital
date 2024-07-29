@@ -15,73 +15,71 @@ struct userProfile: View {
     @State private var selectedItem:ProfileFilterViewModel = .forumPost
     @StateObject var viewModel = ForumPost()
     @State private var emptyPost:Bool = false
-    
+   
     
     var body: some View {
-        NavigationStack{
-            VStack{
-                informationView
-                
-                toolbarView
-                
-                if selectedItem == .forumPost{
-                    postView
+        if viewModel.isLoading == false{
+            NavigationStack{
+                VStack{
+                    informationView
+                    
+                    toolbarView
+                    
+                   
+                        postView
+                    
+                   
+                    
+                    Spacer()
                 }
-                if selectedItem == .history{
-                    Text("yet to complete")
-                }
-                
-                Spacer()
-            }
-            .toolbar{
-                
-                ToolbarItem{
-                    Button(action: {
-                        currentShowingView="menu"
-                    }, label: {
-                        Text("menu")
-                            .foregroundColor(.white)
+                .toolbar{
+                    
+                    ToolbarItem(placement: .topBarLeading){
+                        Button(action: {
+                            currentShowingView="menu"
+                        }, label: {
+                            HStack{
+                                Image(systemName: "chevron.left")
+                                Text("menu")
+                                    .foregroundColor(.white)
+                            }
                             
-                    })
+                        })
+                    }
                 }
+                
             }
             
+        }else{
+            LoadingView
+            
         }
-        
     }
     
 }
 extension userProfile{
     var toolbarView:some View{
         HStack{
-            ForEach(ProfileFilterViewModel.allCases, id:\.rawValue){item in
+           
                 VStack{
-                    Text(item.title)
+                    Text("Post")
                         .font(.subheadline)
-                        .fontWeight(selectedItem == item ? .bold :.regular)
+                        .fontWeight( .bold )
                     
-                    if selectedItem == item{
+                   
                         Capsule()
-                            .foregroundColor(.blue)
+                            .foregroundColor(.green)
                             .frame(height: 3)
-                    }
-                    else{
-                        Capsule()
-                            .foregroundColor(.clear)
-                            .frame(height: 3)
-                    }
+                    
+                    
                 }
-                .onTapGesture {
-                    withAnimation(.easeInOut){
-                        self.selectedItem = item
-                    }
-                }
-            }
+               
+            
         }
     }
     var informationView:some View{
         ZStack(alignment:.top){
-            Color(.systemBlue)
+            Color(.systemGreen)
                 .ignoresSafeArea()
             VStack{
                 
@@ -158,6 +156,27 @@ extension userProfile{
         
     }
     
-    
+    var LoadingView:some View{
+     
+            VStack{
+                Image(systemName: "rays")
+                Text("It may take a while")
+                    .font(.subheadline)
+                
+            }
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        currentShowingView = "menu"
+                    } label: {
+                        Image(systemName: "chevron.left")
+                        
+                    }
+                }
+            }
+        
+            
+                    
+    }
     
 }

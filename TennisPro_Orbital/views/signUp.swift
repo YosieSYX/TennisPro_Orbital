@@ -17,6 +17,7 @@ struct signUp: View {
     @State private var name: String=""
     @State private var showAlert: Bool=false
     @State private var errorMessage: String = ""
+    @StateObject var viewModel = EditProfileViewModel()
     var body: some View {
        
         VStack(spacing:30){
@@ -91,7 +92,9 @@ struct signUp: View {
                         return
                     }
                         else{
-                        
+                            guard let userId = authResult?.user.uid else{return }
+                            let userIdString = userId.description 
+                            viewModel.uploadProfile(userId:userIdString , UIImage(systemName: "person.fill")!, user_name: "user12345", introduction: "This user has no introduction")
                         withAnimation{self.currentShowingView = "login"}
                         
                     }

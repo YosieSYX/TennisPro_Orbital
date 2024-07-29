@@ -157,6 +157,8 @@
 		DE41B2612C3FF49900134227 /* ProfilePhotoUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoUpload.swift; sourceTree = "<group>"; };
 		DE41B2632C40043900134227 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		DE41B2652C40FC2200134227 /* FetchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUser.swift; sourceTree = "<group>"; };
+		DE529F772C54F675004240B9 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		DE529F792C54F6C5004240B9 /* abseil-cpp-binary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "abseil-cpp-binary"; path = "../../../../Library/Developer/Xcode/DerivedData/TennisPro_Orbital-cpdyxersopfwiqdxmbtcjzxlzaez/SourcePackages/checkouts/abseil-cpp-binary"; sourceTree = "<group>"; };
 		DE6CDB7F2C100C66003A5C64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DE6FDCA32C46BD6B00F42570 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DE89762D2C3E3A5C0001FA53 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		DEAD78372C1C32D7009CD325 /* ViewModelForum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelForum.swift; sourceTree = "<group>"; };
 		DEAD783B2C1D63C8009CD325 /* FetchVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideo.swift; sourceTree = "<group>"; };
 		DEAD790B2C23C72E009CD325 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DED2DF722C54D89900F23F97 /* TennisPro_Orbital */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TennisPro_Orbital; sourceTree = "<group>"; };
 		F644D5102DE1D7647C0B759F /* Pods_TennisPro_OrbitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisPro_OrbitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6BE3F6D9C354D0AC298849 /* Pods_TennisPro_Orbital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisPro_Orbital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -285,6 +288,9 @@
 		C636419359BAD0CC8752E97A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE529F792C54F6C5004240B9 /* abseil-cpp-binary */,
+				DE529F772C54F675004240B9 /* Pods */,
+				DED2DF722C54D89900F23F97 /* TennisPro_Orbital */,
 				FD6BE3F6D9C354D0AC298849 /* Pods_TennisPro_Orbital.framework */,
 				06F101DF612850892C424ED2 /* Pods_TennisPro_Orbital_TennisPro_OrbitalUITests.framework */,
 				F644D5102DE1D7647C0B759F /* Pods_TennisPro_OrbitalTests.framework */,
@@ -1005,7 +1011,43 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/MLImage/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitPoseDetection/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitPoseDetectionCommon/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitVision/Frameworks\"",
+					"\"${PODS_ROOT}/MLKitXenoCommon/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/abseil\"",
+					"$(CONFIGURATION_BUILD_DIR)/absl.framework",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilitiesComponents/GoogleUtilitiesComponents.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/Protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMLKit\"",
+					"$(inherited)",
+					"${PODS_ROOT}/GoogleMLKit/MLKitCore/Sources",
+					"$(CONFIGURATION_BUILD_DIR)/absl.framework/Headers",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "NUS.TennisPro-OrbitalTests";
@@ -1013,7 +1055,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisPro_Orbital";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/TennisPro_Orbital";
 			};
 			name = Debug;
 		};
@@ -1033,7 +1075,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TennisPro_Orbital";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisPro_Orbital.app/TennisPro_Orbital";
 			};
 			name = Release;
 		};

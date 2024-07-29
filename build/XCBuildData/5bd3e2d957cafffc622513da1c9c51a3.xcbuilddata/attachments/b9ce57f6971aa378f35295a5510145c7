@@ -1,0 +1,4 @@
+module FirebaseDynamicLinks {
+umbrella header "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDynamicLinks/Sources/Public/FirebaseDynamicLinks/FirebaseDynamicLinks.h"
+export *
+}

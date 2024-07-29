@@ -1,0 +1,110 @@
+{
+  "" : {
+    "const-values" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master.swiftconstvalues",
+    "dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master.d",
+    "diagnostics" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master.dia",
+    "emit-module-dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master-emit-module.dia",
+    "swift-dependencies" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FirebaseVertexAI-master.swiftdeps"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/Chat.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Chat.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Chat.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Chat.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/Constants.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Constants.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/CountTokensRequest.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/CountTokensRequest.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/CountTokensRequest.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/CountTokensRequest.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/Errors.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Errors.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Errors.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Errors.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/FunctionCalling.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FunctionCalling.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FunctionCalling.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/FunctionCalling.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerateContentError.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentError.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentError.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentError.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerateContentRequest.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentRequest.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentRequest.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentRequest.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerateContentResponse.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentResponse.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentResponse.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerateContentResponse.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerationConfig.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerationConfig.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerationConfig.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerationConfig.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerativeAIRequest.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIRequest.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIRequest.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIRequest.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerativeAIService.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIService.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIService.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeAIService.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/GenerativeModel.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeModel.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeModel.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/GenerativeModel.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/JSONValue.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/JSONValue.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/JSONValue.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/JSONValue.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/Logging.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Logging.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Logging.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Logging.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/ModelContent.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/ModelContent.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/ModelContent.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/ModelContent.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/PartsRepresentable.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/PartsRepresentable+Image.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable+Image.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable+Image.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/PartsRepresentable+Image.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/Safety.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Safety.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Safety.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/Safety.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/VertexAI.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAI.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAI.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAI.o"
+  },
+  "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/FirebaseVertexAI/Sources/VertexAIComponent.swift" : {
+    "index-unit-output-path" : "/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAIComponent.o",
+    "llvm-bc" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAIComponent.bc",
+    "object" : "/Users/yangqingru/Library/Developer/Xcode/DerivedData/TennisPro_Orbital-gniskhkqgoqmycdsgrcsmfxzbfjk/SourcePackages/checkouts/firebase-ios-sdk/build/Firebase.build/Release-iphoneos/FirebaseVertexAI.build/Objects-normal/arm64/VertexAIComponent.o"
+  }
+}
